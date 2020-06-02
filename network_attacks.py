@@ -166,12 +166,17 @@ def instantaneous_attack(net, removal_rates, verbose=False):
         # Get list of nodes
         nodes = list(attacked_net.nodes)
 
-        # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
-        connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
-        connectivities.sort(key=lambda x: x[1], reverse=True)
+
+        # degree_centrality
+        degree_centralities = nx.degree_centrality(attacked_net)
+        degree_centralities = sorted(degree_centralities.items(), key=lambda item: item[1])
+
+        # # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
+        # connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
+        # connectivities.sort(key=lambda x: x[1], reverse=True)
 
         num_removed_nodes = int(original_net_size * ratio_removed)
-        removed_nodes = [x[0] for x in connectivities[:num_removed_nodes]]
+        removed_nodes = [x[0] for x in degree_centralities[:num_removed_nodes]]
 
         # Remove the nodes
         attacked_net.remove_nodes_from(removed_nodes)
@@ -213,12 +218,16 @@ def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False):
         # Get list of nodes
         nodes = list(attacked_net.nodes)
 
-        # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
-        connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
-        connectivities.sort(key=lambda x: x[1], reverse=True)
+        # degree_centrality
+        degree_centralities = nx.degree_centrality(attacked_net)
+        degree_centralities = sorted(degree_centralities.items(), key=lambda item: item[1])
+
+        # # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
+        # connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
+        # connectivities.sort(key=lambda x: x[1], reverse=True)
 
         num_removed_nodes = int(original_net_size * ratio_removed)
-        removed_nodes = [x[0] for x in connectivities[:num_removed_nodes]]
+        removed_nodes = [x[0] for x in degree_centralities[:num_removed_nodes]]
 
         # Remove the nodes
         attacked_net.remove_nodes_from(removed_nodes)
