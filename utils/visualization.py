@@ -5,6 +5,7 @@ import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 import numpy as np
 import powerlaw
+import os
 from scipy.stats import poisson
 
 from network_attacks import instantaneous_attack, incremental_attack, incremental_random_failure, instantaneous_random_failure
@@ -41,7 +42,7 @@ def get_poisson_net(n_nodes, mu, verbose=False):
     return net
 
 
-def plot_metric_distribution(metrics_quantiles, ratios, y_label, labels, title=''):
+def plot_metric_distribution(metrics_quantiles, ratios, y_label, labels, title, filename):
     fig, ax = plt.subplots(1, 1, figsize=(7, 5))
 
     colors = cm.ocean(np.linspace(0.0, 0.7, len(metrics_quantiles)))
@@ -58,10 +59,11 @@ def plot_metric_distribution(metrics_quantiles, ratios, y_label, labels, title='
         ax.legend(labels).set_zorder(10)
 
     plt.tight_layout()
-    plt.show()
+    filename = os.path.join('..', 'results', filename)
+    plt.savefig(filename)
 
 
-def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, title=''):
+def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, title, filename):
     fig, ax = plt.subplots(1, 1, figsize=(7, 5))
 
     avg_size_isolated_clusters,  relative_size_largest_cluster = zip(*metrics_clusterings)
@@ -82,7 +84,8 @@ def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, t
         ax.legend(labels).set_zorder(10)
 
     plt.tight_layout()
-    plt.show()
+    filename = os.path.join('..', 'results', filename)
+    plt.savefig(filename)
 
 def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack):
     for n_nodes in exp_num_nodes:
@@ -108,14 +111,16 @@ def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, ex
                                      np.cumsum([exp_removal_rate] * steps),
                                      y_label="path length",
                                      labels=[r'$d_{min}$', r'$d_{max}$'],
-                                     title=title)
+                                     title=title,
+                                     filename=file_name + '_distr.png')
 
             clusters_info = [x[0] for x in cluster_size_ratios]
             plot_clustering_distribution(clusters_info,
                                          np.cumsum([exp_removal_rate] * steps),
                                          y_label="clusterings",
                                          labels=[r'$S$', r'$\langle s \rangle$'],
-                                         title=title)
+                                         title=title,
+                                         filename=file_name + '_clust.png')
 
 def instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack):
     for n_nodes in exp_num_nodes:
@@ -141,13 +146,15 @@ def instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_
                                      exp_removal_ratios,
                                      y_label="path length",
                                      labels=[r'$d_{min}$', r'$d_{max}$'],
-                                     title=title)
+                                     title=title,
+                                     filename=file_name + '_distr.png')
             clusters_info = [x[0] for x in cluster_size_ratios]
             plot_clustering_distribution(clusters_info,
                                          exp_removal_ratios,
                                          y_label="clusterings",
                                          labels=[r'$S$', r'$\langle s \rangle$'],
-                                         title=title)
+                                         title=title,
+                                         filename=file_name + '_clust.png')
 
 
 def incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack):
@@ -177,14 +184,16 @@ def incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, e
                                      np.cumsum([exp_removal_rate] * steps),
                                      y_label="path length",
                                      labels=[r'$d_{min}$', r'$d_{max}$'],
-                                     title=title)
+                                     title=title,
+                                     filename=file_name + '_distr.png')
 
             clusters_info = [x[0] for x in cluster_size_ratios]
             plot_clustering_distribution(clusters_info,
                                          np.cumsum([exp_removal_rate] * steps),
                                          y_label="clusterings",
                                          labels=[r'$S$', r'$\langle s \rangle$'],
-                                         title=title)
+                                         title=title,
+                                         filename=file_name + '_clust.png')
 
 
 def instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_random_attack):
@@ -210,13 +219,15 @@ def instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_
                                      exp_removal_ratios,
                                      y_label="path length",
                                      labels=[r'$d_{min}$', r'$d_{max}$'],
-                                     title=title)
+                                     title=title,
+                                     filename=file_name + '_distr.png')
             clusters_info = [x[0] for x in cluster_size_ratios]
             plot_clustering_distribution(clusters_info,
                                          exp_removal_ratios,
                                          y_label="clusterings",
                                          labels=[r'$S$', r'$\langle s \rangle$'],
-                                         title=title)
+                                         title=title,
+                                         filename=file_name + '_clust.png')
 
 
 
@@ -226,7 +237,7 @@ if __name__ == "__main__":
 
     exp_max_rate = 0.5
     # exp_num_nodes = [2000]
-    exp_num_nodes = [500]  # Test the attacks with different sizes of networks
+    exp_num_nodes = [1000, 2000]  # Test the attacks with different sizes of networks
     exp_mus = [4]
     exp_ks = [2.6]
 
@@ -236,5 +247,5 @@ if __name__ == "__main__":
         instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack)
 
         # Scale Free
-        incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack)
-        instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack)
+        incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack)
+        instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_random_attack)

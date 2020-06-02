@@ -15,11 +15,11 @@ def save_results(min_path, max_path, cluster_size_ratios, file_name):
     fileObject.close()
 
     fileObject = open(max_path_file, 'wb')
-    pkl.dump(cluster_size_ratios, fileObject)
+    pkl.dump(max_path, fileObject)
     fileObject.close()
 
     fileObject = open(clusterings_file, 'wb')
-    pkl.dump(min_path, fileObject)
+    pkl.dump(cluster_size_ratios, fileObject)
     fileObject.close()
 
 
