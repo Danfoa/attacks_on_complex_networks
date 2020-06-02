@@ -7,7 +7,7 @@ import numpy as np
 import powerlaw
 from scipy.stats import poisson
 
-from network_attacks import incremental_random_failure
+from network_attacks import instantaneous_attack
 from utils.configuration_model import ConfigurationGenerator
 
 warnings.filterwarnings("ignore", category=UserWarning)
@@ -86,7 +86,6 @@ def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, t
 
 
 if __name__ == "__main__":
-
     exp_removal_ratios = np.linspace(0.0, 0.5, 10)
     exp_num_nodes = [100]
     exp_mus = [4]
@@ -98,10 +97,7 @@ if __name__ == "__main__":
             net = get_poisson_net(n_nodes=n_nodes, mu=mu, verbose=False)
             attacked_net = net
 
-            min_path, max_path, cluster_size_ratios = incremental_random_failure(net=net,
-                                                                                 removal_rate=exp_removal_rate,
-                                                                                 max_rate=exp_max_rate,
-                                                                                 verbose=True)
+            min_path, max_path, cluster_size_ratios = instantaneous_attack(net, exp_removal_ratios,  verbose=True)
 
             print("Final cluster sizes:")
             print(cluster_size_ratios[-1])

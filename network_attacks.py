@@ -159,7 +159,7 @@ def instantaneous_attack(net, removal_rates, verbose=False):
         nodes = list(attacked_net.nodes)
 
         # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
-        connectivities = [(node, nx.node_connectivity(attacked_net, node)) for node in nodes]
+        connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
         connectivities.sort(key=lambda x: x[1], reverse=True)
 
         num_removed_nodes = int(original_net_size * ratio_removed)
@@ -205,7 +205,7 @@ def incremental_attack(net, removal_rates, verbose=False):
         nodes = list(attacked_net.nodes)
 
         # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
-        connectivities = [(node, nx.node_connectivity(attacked_net, node)) for node in nodes]
+        connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
         connectivities.sort(key=lambda x: x[1], reverse=True)
 
         num_removed_nodes = int(original_net_size * ratio_removed)
