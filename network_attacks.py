@@ -33,10 +33,12 @@ def get_attack_metrics(net):
     shortest_path_list = shortest_path_list[shortest_path_list > 0]
 
     # Calculate max path length between nodes and the rest of the graph
+    min_cluster = None
     if nx.is_connected(net):
         nodes_eccentricity = np.array(list(nx.eccentricity(net).values()), dtype=np.int32)
         avg_size_isolated_clusters = 1.0
         relative_size_largest_cluster = 1.0
+        cluster_quantiles = mstats.mquantiles([0.0, 0.0, 0.0], axis=0)
     else:
         # Find the separated insels network nodes
         components = sorted(nx.connected_components(net), key=len, reverse=True)
@@ -48,11 +50,17 @@ def get_attack_metrics(net):
         largest_subgraph = net.subgraph(largest_component)
         nodes_eccentricity = np.array(list(nx.eccentricity(largest_subgraph).values()), dtype=np.int32)
 
+        cluster_quantiles = mstats.mquantiles(cluster_sizes[1:], axis=0)
+        # Replace 50% percentile with mean value
+        cluster_quantiles[1] = np.mean(cluster_sizes[1:])
+
     results["shortest_paths"] = shortest_path_list
     results["eccentricities"] = nodes_eccentricity
 
+    min_cluster = np.vstack([min_cluster, cluster_quantiles]) if min_cluster is not None else cluster_quantiles
+
     # Save a tuple of (S, <s>) which is the relative size of the largest cluster and the average size of the isolated clusters
-    results["cluster_sizes"] = (relative_size_largest_cluster, avg_size_isolated_clusters)
+    results["cluster_sizes"] = [(relative_size_largest_cluster, avg_size_isolated_clusters), min_cluster]
 
     return results
 
@@ -184,7 +192,7 @@ def instantaneous_attack(net, removal_rates, verbose=False):
     return min_path, max_path, cluster_size_ratios
 
 
-def incremental_attack(net, removal_rates, verbose=False):
+def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False):
     """
     This type of attack simulates an instantaneous attack where at each step first remove the most connected node, and then
     selecting and removing nodes in decreasing order of their connectivity k.
@@ -199,7 +207,8 @@ def incremental_attack(net, removal_rates, verbose=False):
     original_net_size = len(net.nodes)
     min_path, max_path, cluster_size_ratios = None, None, []
 
-    for ratio_removed in tqdm(removal_rates, desc="- Instantaneous_attack", disable=not verbose, file=sys.stdout):
+    steps = int(max_rate / removal_rate)
+    for ratio_removed in tqdm([removal_rate] * steps, desc="- Incremental_attack", disable=not verbose, file=sys.stdout):
         # Create deep copy of the original network
         # Get list of nodes
         nodes = list(attacked_net.nodes)
