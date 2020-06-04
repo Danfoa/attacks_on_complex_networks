@@ -112,21 +112,22 @@ def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, ex
                 file_name = "poisson-incr-attack-mu=%.3f-n_nodes=%d" % (mu, n_nodes)
                 title = "Incremental Attack - Poisson nodes=%d mu=%.2f " % (n_nodes, mu)
 
-
                 min_path, max_path, cluster_size_ratios, network_tracking = incremental_attack(net=net,
-                                                                                       removal_rate=exp_removal_rate,
-                                                                                       max_rate=exp_max_rate,
-                                                                                       verbose=True,
-                                                                                       track_net_num=track_net)
-                plot_network_tracking(network_tracking, title, file_name)
+                                                                                               removal_rate=exp_removal_rate,
+                                                                                               max_rate=exp_max_rate,
+                                                                                               verbose=True,
+                                                                                               track_net_num=track_net)
+
             else:
-                min_path, max_path, cluster_size_ratios = incremental_random_failure(net=net,
-                                                                             removal_rate=exp_removal_rate,
-                                                                             max_rate=exp_max_rate)
+                min_path, max_path, cluster_size_ratios, network_tracking = incremental_random_failure(net=net,
+                                                                                                       removal_rate=exp_removal_rate,
+                                                                                                       max_rate=exp_max_rate,
+                                                                                                       track_net_num=track_net)
 
                 file_name = "poisson-incr-failure-mu=%.3f-n_nodes=%d" % (mu, n_nodes)
                 title = "Incremental Failure - Poisson nodes=%d mu=%.2f " % (n_nodes, mu)
             save_results(min_path, max_path, cluster_size_ratios, file_name)
+            plot_network_tracking(network_tracking, title, file_name)
             steps = int(exp_max_rate / exp_removal_rate)
             plot_metric_distribution([min_path, max_path],
                                      np.cumsum([exp_removal_rate] * steps),
@@ -185,22 +186,23 @@ def incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, e
             net = get_power_law_net(n_nodes, k, verbose=False)
             if not is_random_attack:
                 min_path, max_path, cluster_size_ratios, network_tracking = incremental_attack(net=net,
-                                                                             removal_rate=exp_removal_rate,
-                                                                             max_rate=exp_max_rate,
-                                                                             track_net_num=track_net)
+                                                                                               removal_rate=exp_removal_rate,
+                                                                                               max_rate=exp_max_rate,
+                                                                                               track_net_num=track_net)
 
                 file_name = "powerlaw-incr-attack-k=%.3f-n_nodes=%d" % (k, n_nodes)
                 title = "Incremental Attack - Powerlaw nodes=%d k=%.2f " % (n_nodes, k)
-                plot_network_tracking(network_tracking, title, file_name)
             else:
-                min_path, max_path, cluster_size_ratios = incremental_random_failure(net=net,
-                                                                             removal_rate=exp_removal_rate,
-                                                                             max_rate=exp_max_rate)
+                min_path, max_path, cluster_size_ratios, network_tracking = incremental_random_failure(net=net,
+                                                                                                       removal_rate=exp_removal_rate,
+                                                                                                       max_rate=exp_max_rate,
+                                                                                                       track_net_num=track_net)
 
                 file_name = "powerlaw-incr-failure-k=%.3f-n_nodes=%d" % (k, n_nodes)
                 title = "Incremental Failure - Powerlaw nodes=%d k=%.2f " % (n_nodes, k)
 
             save_results(min_path, max_path, cluster_size_ratios, file_name)
+            plot_network_tracking(network_tracking, title, file_name)
             steps = int(exp_max_rate / exp_removal_rate)
 
             plot_metric_distribution([min_path, max_path],
