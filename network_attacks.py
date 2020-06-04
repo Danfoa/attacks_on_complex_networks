@@ -65,7 +65,7 @@ def get_attack_metrics(net):
     return results
 
 
-def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False):
+def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False, track_net_num=None):
     """
     This type of attack simulates a sequential and time increasing attack, where at each iteration a constant ratio
     of the original net nodes are removed.
@@ -82,7 +82,12 @@ def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False):
     min_path, max_path, cluster_size_ratios = None, None, []
 
     steps = int(max_rate / removal_rate)
+    if track_net_num is not None:
+        track_net_num = int(steps/track_net_num)
+        network_tracking = {0: nx.Graph(net)}
+    step = 0
     for ratio_removed in tqdm([removal_rate] * steps, desc="- Incremental_failure", disable=not verbose, file=sys.stdout):
+        step = step+1
         # Get list of nodes
         nodes = list(attacked_net.nodes)
         # Randomly select nodes to remove
@@ -120,6 +125,12 @@ def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False):
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
         cluster_size_ratios.append(metrics["cluster_sizes"])
 
+        if track_net_num is not None:
+            if step % track_net_num == 0:
+                network_tracking.update({removal_rate * step: nx.Graph(attacked_net)})
+
+    if track_net_num is not None:
+        return min_path, max_path, cluster_size_ratios, network_tracking
     return min_path, max_path, cluster_size_ratios
 
 
