@@ -92,12 +92,29 @@ def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False):
 
         metrics = get_attack_metrics(attacked_net)
 
-        min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
-        max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
+        # min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
+        # max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
+        #
+        # # Replace 50% percentile with mean value
+        # min_quantiles[1] = np.mean(metrics["shortest_paths"])
+        # max_quantiles[1] = np.mean(metrics["eccentricities"])
 
-        # Replace 50% percentile with mean value
+        min_quantiles = np.zeros(3, dtype=np.float)
+        max_quantiles = np.zeros(3, dtype=np.float)
+
         min_quantiles[1] = np.mean(metrics["shortest_paths"])
+        std = np.std(metrics["shortest_paths"], axis=0)
+        min_quantiles[2] = min_quantiles[1] + std
+        min_quantiles[0] = min_quantiles[1] - std
+
         max_quantiles[1] = np.mean(metrics["eccentricities"])
+        std = np.std(metrics["eccentricities"], axis=0)
+        max_quantiles[2] = max_quantiles[1] + std
+        max_quantiles[0] = max_quantiles[1] - std
+
+
+        min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
+        max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
@@ -132,12 +149,29 @@ def instantaneous_random_failure(net, removal_rates, verbose=False):
 
         metrics = get_attack_metrics(attacked_net)
 
-        min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
-        max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
+        # min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
+        # max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
+        #
+        # # Replace 50% percentile with mean value
+        # min_quantiles[1] = np.mean(metrics["shortest_paths"])
+        # max_quantiles[1] = np.mean(metrics["eccentricities"])
 
-        # Replace 50% percentile with mean value
+        min_quantiles = np.zeros(3, dtype=np.float)
+        max_quantiles = np.zeros(3, dtype=np.float)
+
         min_quantiles[1] = np.mean(metrics["shortest_paths"])
+        std = np.std(metrics["shortest_paths"], axis=0)
+        min_quantiles[2] = min_quantiles[1] + std
+        min_quantiles[0] = min_quantiles[1] - std
+
         max_quantiles[1] = np.mean(metrics["eccentricities"])
+        std = np.std(metrics["eccentricities"], axis=0)
+        max_quantiles[2] = max_quantiles[1] + std
+        max_quantiles[0] = max_quantiles[1] - std
+
+
+        min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
+        max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
@@ -183,12 +217,29 @@ def instantaneous_attack(net, removal_rates, verbose=False):
 
         metrics = get_attack_metrics(attacked_net)
 
-        min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
-        max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
+        # min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
+        # max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
+        #
+        # # Replace 50% percentile with mean value
+        # min_quantiles[1] = np.mean(metrics["shortest_paths"])
+        # max_quantiles[1] = np.mean(metrics["eccentricities"])
 
-        # Replace 50% percentile with mean value
+        min_quantiles = np.zeros(3, dtype=np.float)
+        max_quantiles = np.zeros(3, dtype=np.float)
+
         min_quantiles[1] = np.mean(metrics["shortest_paths"])
+        std = np.std(metrics["shortest_paths"], axis=0)
+        min_quantiles[2] = min_quantiles[1] + std
+        min_quantiles[0] = min_quantiles[1] - std
+
         max_quantiles[1] = np.mean(metrics["eccentricities"])
+        std = np.std(metrics["eccentricities"], axis=0)
+        max_quantiles[2] = max_quantiles[1] + std
+        max_quantiles[0] = max_quantiles[1] - std
+
+
+        min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
+        max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
@@ -234,12 +285,26 @@ def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False):
 
         metrics = get_attack_metrics(attacked_net)
 
-        min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
-        max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
-
+        # min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
+        # max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
         # Replace 50% percentile with mean value
+        # min_quantiles[1] = np.mean(metrics["shortest_paths"])
+        # max_quantiles[1] = np.mean(metrics["eccentricities"])
+
+
+        min_quantiles = np.zeros(3, dtype=np.float)
+        max_quantiles = np.zeros(3, dtype=np.float)
+
         min_quantiles[1] = np.mean(metrics["shortest_paths"])
+        std = np.std(metrics["shortest_paths"], axis=0)
+        min_quantiles[2] = min_quantiles[1] + std
+        min_quantiles[0] = min_quantiles[1] - std
+
         max_quantiles[1] = np.mean(metrics["eccentricities"])
+        std = np.std(metrics["eccentricities"], axis=0)
+        max_quantiles[2] = max_quantiles[1] + std
+        max_quantiles[0] = max_quantiles[1] - std
+
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
