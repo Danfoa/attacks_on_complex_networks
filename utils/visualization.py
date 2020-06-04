@@ -155,7 +155,7 @@ def instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_
             if not is_random_attack:
                 min_path, max_path, cluster_size_ratios = instantaneous_attack(net=net, removal_rates=exp_removal_ratios, verbose=True)
 
-                file_name = "poisson-inst-attack-mu=%.3f-n_nodes=%d" % (mu, n_nodes)
+                file_name = "poisson-inst-attack-mu=%.2f-n_nodes=%d" % (mu, n_nodes)
                 title = "Instantaneous Attack - Poisson nodes=%d mu=%.2f " % (n_nodes, mu)
 
             else:
@@ -163,7 +163,7 @@ def instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_
                                                                                removal_rates=exp_removal_ratios,
                                                                                verbose=True)
 
-                file_name = "poisson-inst-failure-mu=%.3f-n_nodes=%d" % (mu, n_nodes)
+                file_name = "poisson-inst-failure-mu=%.2f-n_nodes=%d" % (mu, n_nodes)
                 title = "Instantaneous Failure - Poisson nodes=%d mu=%.2f " % (n_nodes, mu)
             save_results(min_path, max_path, cluster_size_ratios, file_name)
 
@@ -192,7 +192,7 @@ def incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, e
                                                                                                max_rate=exp_max_rate,
                                                                                                track_net_num=track_net)
 
-                file_name = "powerlaw-incr-attack-k=%.3f-n_nodes=%d" % (k, n_nodes)
+                file_name = "powerlaw-incr-attack-k=%.2f-n_nodes=%d" % (k, n_nodes)
                 title = "Incremental Attack - Powerlaw nodes=%d k=%.2f " % (n_nodes, k)
             else:
                 min_path, max_path, cluster_size_ratios, network_tracking = incremental_random_failure(net=net,
@@ -200,7 +200,7 @@ def incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, e
                                                                                                        max_rate=exp_max_rate,
                                                                                                        track_net_num=track_net)
 
-                file_name = "powerlaw-incr-failure-k=%.3f-n_nodes=%d" % (k, n_nodes)
+                file_name = "powerlaw-incr-failure-k=%.2f-n_nodes=%d" % (k, n_nodes)
                 title = "Incremental Failure - Powerlaw nodes=%d k=%.2f " % (n_nodes, k)
 
             save_results(min_path, max_path, cluster_size_ratios, file_name)
