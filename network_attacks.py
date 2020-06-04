@@ -115,9 +115,6 @@ def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False):
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
-
-        min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
-        max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
         cluster_size_ratios.append(metrics["cluster_sizes"])
 
     return min_path, max_path, cluster_size_ratios
@@ -169,9 +166,6 @@ def instantaneous_random_failure(net, removal_rates, verbose=False):
         max_quantiles[2] = max_quantiles[1] + std
         max_quantiles[0] = max_quantiles[1] - std
 
-
-        min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
-        max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
@@ -237,9 +231,6 @@ def instantaneous_attack(net, removal_rates, verbose=False):
         max_quantiles[2] = max_quantiles[1] + std
         max_quantiles[0] = max_quantiles[1] - std
 
-
-        min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
-        max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
