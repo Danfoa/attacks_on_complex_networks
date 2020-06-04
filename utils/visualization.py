@@ -97,6 +97,8 @@ def plot_network_tracking(network_tracking, title, file_name):
     plt.figure(figsize=(cols * size, 2 * size))
     pos = nx.random_layout(network_tracking[ratios[0]])
     for i, ratio in enumerate(ratios):
+        filename = os.path.join(file_name, "network_tracking({}).net".format(i))
+        nx.write_pajek(network_tracking[ratio], filename)
         plt.subplot(2, cols, i + 1)
         nx.draw(network_tracking[ratio], node_size=10, pos=pos)
         plt.title("Ratio:{} - N:{}".format(ratio, network_tracking[ratio].number_of_nodes()))
