@@ -4,6 +4,7 @@ import numpy as np
 
 def get_network():
     filename = "networks/oregon2_010526.txt"
+    filename = "networks/p2p-Gnutella08.txt"
     G = nx.read_edgelist(filename)
     return G
 
