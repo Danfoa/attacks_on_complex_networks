@@ -169,7 +169,7 @@ def instantaneous_attack(net, removal_rates, verbose=False):
 
         # degree_centrality
         degree_centralities = nx.degree_centrality(attacked_net)
-        degree_centralities = sorted(degree_centralities.items(), key=lambda item: item[1])
+        degree_centralities = sorted(degree_centralities.items(), key=lambda item: item[1], reverse=True)
 
         # # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
         # connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
