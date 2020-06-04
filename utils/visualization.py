@@ -92,15 +92,16 @@ def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, t
 def plot_network_tracking(network_tracking, title, file_name):
     ratios = sorted(list(network_tracking.keys()))
     num_plots = len(ratios)
-    cols = int((num_plots+1)/2)
+    cols = int((num_plots + 1) / 2)
     size = 5
-    plt.figure(figsize=(cols*size, 2*size))
+    plt.figure(figsize=(cols * size, 2 * size))
+    pos = nx.random_layout(network_tracking[ratios[0]])
     for i, ratio in enumerate(ratios):
-        plt.subplot(2,cols,i+1)
-        nx.draw_circular(network_tracking[ratio], node_size=10)
+        plt.subplot(2, cols, i + 1)
+        nx.draw(network_tracking[ratio], node_size=10, pos=pos)
         plt.title("Ratio:{} - N:{}".format(ratio, network_tracking[ratio].number_of_nodes()))
 
-    plt.savefig("results/{}_network_tracking.png".format(file_name))
+    plt.savefig("../results/{}_network_tracking.png".format(file_name))
 
 
 def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=None):
@@ -258,12 +259,12 @@ def instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_
 
 
 if __name__ == "__main__":
-    exp_removal_rate = 0.0025
+    exp_removal_rate = 0.025
     exp_removal_ratios = np.linspace(0.0, 0.5, 10)
 
     exp_max_rate = 0.5
     # exp_num_nodes = [2000]
-    exp_num_nodes = [500]#[1000, 2000]  # Test the attacks with different sizes of networks
+    exp_num_nodes = [100]  # Test the attacks with different sizes of networks
     exp_mus = [4]
     exp_ks = [2.6]
 
