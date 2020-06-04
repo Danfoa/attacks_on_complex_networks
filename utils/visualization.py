@@ -231,7 +231,7 @@ def instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_
                 min_path, max_path, cluster_size_ratios = instantaneous_attack(net=net, removal_rates=exp_removal_ratios,
                                                                                verbose=True)
 
-                file_name = "powerlaw-inst-attack-k=%.3f-n_nodes=%d" % (k, n_nodes)
+                file_name = "powerlaw-inst-attack-k=%.2f-n_nodes=%d" % (k, n_nodes)
                 title = "Instantaneous Attack - Powerlaw nodes=%d k=%.2f " % (n_nodes, k)
             else:
                 min_path, max_path, cluster_size_ratios = instantaneous_random_failure(net=net,
