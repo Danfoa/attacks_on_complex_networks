@@ -197,23 +197,29 @@ def instantaneous_attack(net, removal_rates, verbose=False):
     return min_path, max_path, cluster_size_ratios
 
 
-def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False):
+def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False, track_net_num=None):
     """
     This type of attack simulates an instantaneous attack where at each step first remove the most connected node, and then
     selecting and removing nodes in decreasing order of their connectivity k.
     :param net: Network to attack
     :param removal_rates: Vector of removal rates to test
+    :param track_net_num: Number of steps to store the current network (approximately)
     :return: - shortest path [25% quantile, mean, 75% quantile]
              - shortest path [25% quantile, mean, 75% quantile]
              - cluster_sizes_ratios: Relative size of the clusters/islands of networks generated after the attack.
     """
 
-    attacked_net = net
+    attacked_net = nx.Graph(net)
     original_net_size = len(net.nodes)
     min_path, max_path, cluster_size_ratios = None, None, []
 
     steps = int(max_rate / removal_rate)
+    if track_net_num is not None:
+        track_net_num = int(steps/track_net_num)
+        network_tracking = {0: nx.Graph(net)}
+    step = 0
     for ratio_removed in tqdm([removal_rate] * steps, desc="- Incremental_attack", disable=not verbose, file=sys.stdout):
+        step = step+1
         # Create deep copy of the original network
         # Get list of nodes
         nodes = list(attacked_net.nodes)
@@ -245,6 +251,12 @@ def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False):
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
         cluster_size_ratios.append(metrics["cluster_sizes"])
 
+        if track_net_num is not None:
+            if step % track_net_num == 0:
+                network_tracking.update({removal_rate * step: nx.Graph(attacked_net)})
+
+    if track_net_num is not None:
+        return min_path, max_path, cluster_size_ratios, network_tracking
     return min_path, max_path, cluster_size_ratios
 
 
