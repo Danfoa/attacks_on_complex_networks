@@ -7,6 +7,7 @@ import numpy as np
 import powerlaw
 import os
 from scipy.stats import poisson
+import networkx as nx
 
 from network_attacks import instantaneous_attack, incremental_attack, incremental_random_failure, instantaneous_random_failure
 from utils.configuration_model import ConfigurationGenerator
@@ -87,17 +88,42 @@ def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, t
     filename = os.path.join('..', 'results', filename)
     plt.savefig(filename)
 
-def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack):
+
+def plot_network_tracking(network_tracking, title, file_name):
+    ratios = sorted(list(network_tracking.keys()))
+    num_plots = len(ratios)
+    cols = int((num_plots + 1) / 2)
+    size = 5
+    plt.figure(figsize=(cols * size, 2 * size))
+    pos = nx.random_layout(network_tracking[ratios[0]])
+    for i, ratio in enumerate(ratios):
+        plt.subplot(2, cols, i + 1)
+        nx.draw(network_tracking[ratio], node_size=10, pos=pos)
+        plt.title("Ratio:{} - N:{}".format(ratio, network_tracking[ratio].number_of_nodes()))
+
+    plt.savefig("../results/{}_network_tracking.png".format(file_name))
+
+
+def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=None):
     for n_nodes in exp_num_nodes:
         for mu in exp_mus:
             net = get_poisson_net(n_nodes=n_nodes, mu=mu, verbose=False)
             if not is_random_attack:
-                min_path, max_path, cluster_size_ratios = incremental_attack(net=net,
-                                                                             removal_rate=exp_removal_rate,
-                                                                             max_rate=exp_max_rate)
-
                 file_name = "poisson-incr-attack-mu=%.3f-n_nodes=%d" % (mu, n_nodes)
                 title = "Incremental Attack - Poisson nodes=%d mu=%.2f " % (n_nodes, mu)
+
+                min_path, max_path, cluster_size_ratios = incremental_attack(net=net,
+                                                                             removal_rate=exp_removal_rate,
+                                                                             max_rate=exp_max_rate,
+                                                                             verbose=False)
+
+                if track_net is not None:
+                    min_path, max_path, cluster_size_ratios, network_tracking = incremental_attack(net=net,
+                                                                                       removal_rate=exp_removal_rate,
+                                                                                       max_rate=exp_max_rate,
+                                                                                       verbose=True,
+                                                                                       track_net_num=track_net)
+                    plot_network_tracking(network_tracking, title, file_name)
             else:
                 min_path, max_path, cluster_size_ratios = incremental_random_failure(net=net,
                                                                              removal_rate=exp_removal_rate,
@@ -121,6 +147,7 @@ def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, ex
                                          labels=[r'$S$', r'$\langle s \rangle$'],
                                          title=title,
                                          filename=file_name + '_clust.png')
+
 
 def instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack):
     for n_nodes in exp_num_nodes:
@@ -232,20 +259,20 @@ def instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_
 
 
 if __name__ == "__main__":
-    exp_removal_rate = 0.05
+    exp_removal_rate = 0.025
     exp_removal_ratios = np.linspace(0.0, 0.5, 10)
 
     exp_max_rate = 0.5
     # exp_num_nodes = [2000]
-    exp_num_nodes = [1000, 2000]  # Test the attacks with different sizes of networks
+    exp_num_nodes = [100]  # Test the attacks with different sizes of networks
     exp_mus = [4]
     exp_ks = [2.6]
 
-    for is_random_attack in [True, False]:
+    for is_random_attack in [False]:
         # Poisson
-        incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack)
-        instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack)
+        incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=7)
+        #instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack)
 
         # Scale Free
-        incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack)
-        instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_random_attack)
+        #incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack)
+        #instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_random_attack)
