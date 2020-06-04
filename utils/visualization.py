@@ -238,7 +238,7 @@ def instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_
                                                                                removal_rates=exp_removal_ratios,
                                                                                verbose=True)
 
-                file_name = "powerlaw-inst-failure-k=%.3f-n_nodes=%d" % (k, n_nodes)
+                file_name = "powerlaw-inst-failure-k=%.2f-n_nodes=%d" % (k, n_nodes)
                 title = "Instantaneous Failure - Powerlaw nodes=%d k=%.2f " % (n_nodes, k)
 
             save_results(min_path, max_path, cluster_size_ratios, file_name)
@@ -268,7 +268,7 @@ if __name__ == "__main__":
     exp_mus = [4]
     exp_ks = [2.6]
 
-    for is_random_attack in [True]:
+    for is_random_attack in [False]:
         # Poisson
         incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=7)
         #instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack)
