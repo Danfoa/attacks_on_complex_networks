@@ -104,7 +104,7 @@ def plot_network_tracking(network_tracking, title, file_name):
     plt.savefig("../results/{}_network_tracking.png".format(file_name))
 
 
-def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=None):
+def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=1):
     for n_nodes in exp_num_nodes:
         for mu in exp_mus:
             net = get_poisson_net(n_nodes=n_nodes, mu=mu, verbose=False)
@@ -112,18 +112,13 @@ def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, ex
                 file_name = "poisson-incr-attack-mu=%.3f-n_nodes=%d" % (mu, n_nodes)
                 title = "Incremental Attack - Poisson nodes=%d mu=%.2f " % (n_nodes, mu)
 
-                min_path, max_path, cluster_size_ratios = incremental_attack(net=net,
-                                                                             removal_rate=exp_removal_rate,
-                                                                             max_rate=exp_max_rate,
-                                                                             verbose=False)
 
-                if track_net is not None:
-                    min_path, max_path, cluster_size_ratios, network_tracking = incremental_attack(net=net,
+                min_path, max_path, cluster_size_ratios, network_tracking = incremental_attack(net=net,
                                                                                        removal_rate=exp_removal_rate,
                                                                                        max_rate=exp_max_rate,
                                                                                        verbose=True,
                                                                                        track_net_num=track_net)
-                    plot_network_tracking(network_tracking, title, file_name)
+                plot_network_tracking(network_tracking, title, file_name)
             else:
                 min_path, max_path, cluster_size_ratios = incremental_random_failure(net=net,
                                                                              removal_rate=exp_removal_rate,
@@ -184,18 +179,19 @@ def instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_
                                          filename=file_name + '_clust.png')
 
 
-def incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack):
+def incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack, track_net=1):
     for n_nodes in exp_num_nodes:
         for k in exp_ks:
             net = get_power_law_net(n_nodes, k, verbose=False)
             if not is_random_attack:
-                min_path, max_path, cluster_size_ratios = incremental_attack(net=net,
+                min_path, max_path, cluster_size_ratios, network_tracking = incremental_attack(net=net,
                                                                              removal_rate=exp_removal_rate,
-                                                                             max_rate=exp_max_rate)
+                                                                             max_rate=exp_max_rate,
+                                                                             track_net_num=track_net)
 
                 file_name = "powerlaw-incr-attack-k=%.3f-n_nodes=%d" % (k, n_nodes)
                 title = "Incremental Attack - Powerlaw nodes=%d k=%.2f " % (n_nodes, k)
-
+                plot_network_tracking(network_tracking, title, file_name)
             else:
                 min_path, max_path, cluster_size_ratios = incremental_random_failure(net=net,
                                                                              removal_rate=exp_removal_rate,
@@ -274,5 +270,5 @@ if __name__ == "__main__":
         #instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack)
 
         # Scale Free
-        #incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack)
+        incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack, track_net=7)
         #instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_random_attack)
