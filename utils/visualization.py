@@ -107,6 +107,37 @@ def plot_network_tracking(network_tracking, title, file_name):
     plt.savefig("../results/{}_network_tracking.png".format(file_name))
 
 
+def plot_comparisons_from_file_metrics(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate):
+    steps = int(exp_max_rate / exp_removal_rate)
+    xaxis = np.cumsum([exp_removal_rate] * steps)
+
+    colors = cm.ocean(np.linspace(0.0, 0.7, len(filenames)))
+    fig, ax = plt.subplots(1, 1, figsize=(7, 5))
+
+    min_paths, max_paths, cluster_size_ratios, ylabels = [], [], [], []
+    for i, f in enumerate(filenames):
+        min_path, max_path, cluster_size_ratios = load_results(f)
+
+        for quantiles in [min_path]:#, max_path]:
+            c = colors[i]
+            ax.plot(xaxis, quantiles[:, 1], '-', color=c)
+            ax.fill_between(xaxis, quantiles[:, 0], quantiles[:, 2], color=c, alpha=0.15)
+
+        ylabels.append(r'$d_{min}: $' + labels[i])
+        #ylabels.append(r'$d_{max}: $' + labels[i])
+
+    ax.grid("on", alpha=0.1)
+    ax.set_ylabel("clusterings")
+    ax.set_xlabel("Removal ratio")
+    ax.set_title(title)
+    if labels:
+        ax.legend(ylabels).set_zorder(10)
+
+    plt.tight_layout()
+    file_name = os.path.join('..', 'results', file_name + "_dia_comparisons")
+    plt.savefig(file_name)
+
+
 def plot_comparisons_from_file_clustering(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate):
 
     steps = int(exp_max_rate / exp_removal_rate)
@@ -117,6 +148,7 @@ def plot_comparisons_from_file_clustering(file_name, title, filenames, labels, e
     fig, ax = plt.subplots(1, 1, figsize=(7, 5))
 
     min_paths, max_paths, cluster_size_ratios, ylabels = [], [], [], []
+    c = 0
     for i,f in enumerate(filenames):
         min_path, max_path, cluster_size_ratios = load_results(f)
 
@@ -127,8 +159,9 @@ def plot_comparisons_from_file_clustering(file_name, title, filenames, labels, e
         markers = [(2 * i + j)%len(markers_all) for j in range(2)]
         markers = [markers_all[j] for j in markers]
 
-        for quantiles, marker in zip(metrics_quantiles, markers):
-            ax.plot(xaxis, quantiles, marker, fillstyle='none', color=colors[i])
+        #for quantiles, marker in zip(metrics_quantiles, markers):
+        ax.plot(xaxis, metrics_quantiles[0], "-", fillstyle='none', color=colors[i])
+        ax.plot(xaxis, metrics_quantiles[1], '--', fillstyle='none', color=colors[i])
 
         ylabels.append("S: "+labels[i])
         ylabels.append("<s>: "+labels[i])
@@ -360,4 +393,6 @@ if __name__ == "__main__":
                   "poisson-incr-attack-mu=8.00-n_nodes=100"]
     filename = title = "mu_comparisons_poisson-incr-attack"
     plot_comparisons_from_file_clustering(filename, title, filenames, ["mu={}".format(mu) for mu in exp_mus],
+                                          exp_max_rate, exp_removal_rate)
+    plot_comparisons_from_file_metrics(filename, title, filenames, ["mu={}".format(mu) for mu in exp_mus],
                                           exp_max_rate, exp_removal_rate)
