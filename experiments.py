@@ -9,7 +9,8 @@ from network_attacks import instantaneous_attack, incremental_attack, incrementa
 from networks import oregon
 from utils.data_saver import save_results
 from utils.network_generation import get_poisson_net, get_power_law_net
-from utils.visualization import plot_clustering_distribution, plot_metric_distribution, save_network_tracking
+from utils.visualization import plot_clustering_distribution, plot_metric_distribution, save_network_tracking, \
+    plot_comparisons_from_file_clustering, plot_comparisons_from_file_metrics
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
