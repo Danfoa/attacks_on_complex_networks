@@ -1,6 +1,7 @@
 import time
 import warnings
 
+import networkx as nx
 import numpy as np
 import powerlaw
 from scipy.stats import poisson
@@ -36,3 +37,9 @@ def get_poisson_net(n_nodes, mu, verbose=False):
         print("** Gen Poisson mu=%.2f took %.3fs" % (mu, time.time() - start_time))
 
     return net
+
+
+def get_gnutella():
+    filename = "networks/p2p-Gnutella08.txt"
+    G = nx.read_edgelist(filename)
+    return G

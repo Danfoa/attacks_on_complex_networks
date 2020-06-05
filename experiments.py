@@ -8,7 +8,7 @@ from network_attacks import instantaneous_attack, incremental_attack, incrementa
     instantaneous_random_failure
 from networks import oregon
 from utils.data_saver import save_results
-from utils.network_generation import get_poisson_net, get_power_law_net
+from utils.network_generation import get_poisson_net, get_power_law_net, get_gnutella
 from utils.visualization import plot_clustering_distribution, plot_metric_distribution, save_network_tracking, \
     plot_comparisons_from_file_clustering, plot_comparisons_from_file_metrics
 
@@ -218,11 +218,11 @@ if __name__ == "__main__":
         # incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack, track_net=7)
         # instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_random_attack)
 
-        # Oregon
-        net = oregon.get_network()
-        file_name = title = "oregon"
+        # GNutella
+        net = get_gnutella()
+        file_name = title = "GNutella"
         # oregon.degree_distribution(net)
-        incremental_attack_(net, file_name, title, exp_removal_rate, exp_max_rate, is_random_attack, track_net=6)
+        #incremental_attack_(net, file_name, title, exp_removal_rate, exp_max_rate, is_random_attack, track_net=6)
 
 
 
