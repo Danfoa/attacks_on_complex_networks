@@ -43,7 +43,7 @@ def load_results(file_name):
         cluster_size_ratios = pkl.load(fileObject)
         fileObject.close()
 
-        print(min_path)
+        # print(min_path)
 
     return min_path, max_path, cluster_size_ratios
 
