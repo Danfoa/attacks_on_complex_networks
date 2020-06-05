@@ -107,6 +107,44 @@ def plot_network_tracking(network_tracking, title, file_name):
     plt.savefig("../results/{}_network_tracking.png".format(file_name))
 
 
+def plot_comparisons_from_file_clustering(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate):
+
+    steps = int(exp_max_rate / exp_removal_rate)
+    xaxis = np.cumsum([exp_removal_rate] * steps)
+
+    colors = cm.ocean(np.linspace(0.0, 0.7, len(filenames)))
+    markers_all = ["s","x","o",".","D","*"]
+    fig, ax = plt.subplots(1, 1, figsize=(7, 5))
+
+    min_paths, max_paths, cluster_size_ratios, ylabels = [], [], [], []
+    for i,f in enumerate(filenames):
+        min_path, max_path, cluster_size_ratios = load_results(f)
+
+        clusters_info = [x[0] for x in cluster_size_ratios]
+        avg_size_isolated_clusters, relative_size_largest_cluster = zip(*clusters_info)
+        metrics_quantiles = [list(avg_size_isolated_clusters), list(relative_size_largest_cluster)]
+
+        markers = [(2 * i + j)%len(markers_all) for j in range(2)]
+        markers = [markers_all[j] for j in markers]
+
+        for quantiles, marker in zip(metrics_quantiles, markers):
+            ax.plot(xaxis, quantiles, marker, fillstyle='none', color=colors[i])
+
+        ylabels.append("S: "+labels[i])
+        ylabels.append("<s>: "+labels[i])
+
+    ax.grid("on", alpha=0.1)
+    ax.set_ylabel("clusterings")
+    ax.set_xlabel("Removal ratio")
+    ax.set_title(title)
+    if labels:
+        ax.legend(ylabels).set_zorder(10)
+
+    plt.tight_layout()
+    file_name = os.path.join('..', 'results', file_name+"_clust_comparisons")
+    plt.savefig(file_name)
+
+
 def incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=1):
     for n_nodes in exp_num_nodes:
         for mu in exp_mus:
@@ -269,7 +307,8 @@ def incremental_attack_(net, file_name, title, exp_removal_rate, exp_max_rate, i
         min_path, max_path, cluster_size_ratios, network_tracking = incremental_random_failure(net=net,
                                                                                                removal_rate=exp_removal_rate,
                                                                                                max_rate=exp_max_rate,
-                                                                                               track_net_num=track_net)
+                                                                                               track_net_num=track_net,
+                                                                                               verbose=True)
     save_results(min_path, max_path, cluster_size_ratios, file_name)
     plot_network_tracking(network_tracking, title, file_name)
     steps = int(exp_max_rate / exp_removal_rate)
@@ -296,10 +335,10 @@ if __name__ == "__main__":
     exp_max_rate = 0.05
     # exp_num_nodes = [2000]
     exp_num_nodes = [100]  # Test the attacks with different sizes of networks
-    exp_mus = [4]
+    exp_mus = [4, 6, 8]
     exp_ks = [2.6]
 
-    for is_random_attack in [False]:
+    #for is_random_attack in [False]:
         # Poisson
         #incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=7)
         #instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack)
@@ -309,7 +348,16 @@ if __name__ == "__main__":
         #instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_random_attack)
 
         # Oregon
-        net = oregon.get_network()
-        file_name = title = "oregon"
+        #net = oregon.get_network()
+        #file_name = title = "GNutella_incr_fail"
         #oregon.degree_distribution(net)
-        incremental_attack_(net, file_name, title, exp_removal_rate, exp_max_rate, is_random_attack, track_net=6)
+        #incremental_attack_(net, file_name, title, exp_removal_rate, exp_max_rate, is_random_attack, track_net=8)
+
+
+    # mu comparisons
+    filenames = ["poisson-incr-attack-mu=4.00-n_nodes=100",
+                  "poisson-incr-attack-mu=6.00-n_nodes=100",
+                  "poisson-incr-attack-mu=8.00-n_nodes=100"]
+    filename = title = "mu_comparisons_poisson-incr-attack"
+    plot_comparisons_from_file_clustering(filename, title, filenames, ["mu={}".format(mu) for mu in exp_mus],
+                                          exp_max_rate, exp_removal_rate)
