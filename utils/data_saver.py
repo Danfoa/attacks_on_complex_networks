@@ -1,9 +1,10 @@
-import os 
+import os
 import numpy as np
 import pickle as pkl
 
-def save_results(min_path, max_path, cluster_size_ratios, file_name):
 
+def save_results(min_path, max_path, cluster_size_ratios, file_name):
+    file_name = os.path.join("results",file_name)
     os.makedirs(file_name, exist_ok=True)
 
     min_path_file = os.path.join(file_name, "min_path.pickle")
@@ -23,13 +24,12 @@ def save_results(min_path, max_path, cluster_size_ratios, file_name):
     fileObject.close()
 
 
-
 def load_results(file_name):
-    min_path, max_path, cluster_size_ratios = None, None, None 
+    min_path, max_path, cluster_size_ratios = None, None, None
     if os.path.exists(file_name):
-        min_path_file = os.path.join(file_name, "min_path.pickle")
-        max_path_file = os.path.join(file_name, "max_path.pickle")
-        clusterings_file = os.path.join(file_name, "cluster_size_ratios.pickle")
+        min_path_file = os.path.join("results", file_name, "min_path.pickle")
+        max_path_file = os.path.join("results", file_name, "max_path.pickle")
+        clusterings_file = os.path.join("results", file_name, "cluster_size_ratios.pickle")
 
         fileObject = open(min_path_file, 'rb')
         min_path = pkl.load(fileObject)
@@ -46,6 +46,3 @@ def load_results(file_name):
         # print(min_path)
 
     return min_path, max_path, cluster_size_ratios
-
-
-

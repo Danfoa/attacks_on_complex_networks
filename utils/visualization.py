@@ -1,47 +1,12 @@
-import time
+import os
 import warnings
 
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
-import numpy as np
-import powerlaw
-import os
-from scipy.stats import poisson
 import networkx as nx
+import numpy as np
 
-from network_attacks import instantaneous_attack, incremental_attack, incremental_random_failure, instantaneous_random_failure
-from utils.configuration_model import ConfigurationGenerator
-from utils.data_saver import save_results, load_results
-from networks import oregon
 warnings.filterwarnings("ignore", category=UserWarning)
-
-
-def get_power_law_net(n_nodes, k, verbose=False):
-    distribution = powerlaw.Power_Law(xmin=1, parameters=[k])
-    degrees = distribution.generate_random(n_nodes).astype(np.int32)
-
-    start_time = time.time()
-    generator = ConfigurationGenerator(degrees)
-    net = generator.get_network()
-
-    if verbose:
-        print("** Gen PowerLaw k=%.2f took %.3fs" % (k, time.time() - start_time))
-
-    return net
-
-
-def get_poisson_net(n_nodes, mu, verbose=False):
-    distribution = poisson(mu)
-    degrees = distribution.rvs(size=n_nodes)
-
-    start_time = time.time()
-    generator = ConfigurationGenerator(degrees)
-    net = generator.get_network()
-
-    if verbose:
-        print("** Gen Poisson mu=%.2f took %.3fs" % (mu, time.time() - start_time))
-
-    return net
 
 
 def plot_metric_distribution(metrics_quantiles, ratios, y_label, labels, title, filename):
@@ -61,7 +26,10 @@ def plot_metric_distribution(metrics_quantiles, ratios, y_label, labels, title, 
         ax.legend(labels).set_zorder(10)
 
     plt.tight_layout()
-    filename = os.path.join('..', 'results', filename)
+    if not os.path.exists(os.path.join('results')):
+        os.makedirs(os.path.join('results'))
+    filename = os.path.join('results', filename)
+
     plt.savefig(filename)
 
 
@@ -77,7 +45,6 @@ def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, t
     for quantiles, c, marker in zip(metrics_quantiles, colors, markers):
         ax.plot(ratios, quantiles, marker, fillstyle='none', color=c)
 
-
     ax.grid("on", alpha=0.1)
     ax.set_ylabel(y_label)
     ax.set_xlabel("Removal ratio")
@@ -86,19 +53,16 @@ def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, t
         ax.legend(labels).set_zorder(10)
 
     plt.tight_layout()
-    filename = os.path.join('..', 'results', filename)
+    filename = os.path.join('results', filename)
     plt.savefig(filename)
 
 
-def plot_network_tracking(network_tracking, title, file_name):
+def save_network_tracking(network_tracking, title, file_name):
     ratios = sorted(list(network_tracking.keys()))
     num_plots = len(ratios)
-    cols = int((num_plots + 1) / 2)
-    size = 5
-    plt.figure(figsize=(cols * size, 2 * size))
-    pos = nx.random_layout(network_tracking[ratios[0]])
+
     for i, ratio in enumerate(ratios):
-        filename = os.path.join(file_name, "network_tracking({}).net".format(i))
+        filename = os.path.join("results", file_name, "network_tracking({}).net".format(i))
         nx.write_pajek(network_tracking[ratio], filename)
         plt.subplot(2, cols, i + 1)
         nx.draw(network_tracking[ratio], node_size=10, pos=pos)
