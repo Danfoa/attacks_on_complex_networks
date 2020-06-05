@@ -26,7 +26,10 @@ def plot_metric_distribution(metrics_quantiles, ratios, y_label, labels, title, 
         ax.legend(labels).set_zorder(10)
 
     plt.tight_layout()
-    filename = os.path.join('..', 'results', filename)
+    if not os.path.exists(os.path.join('results')):
+        os.makedirs(os.path.join('results'))
+    filename = os.path.join('results', filename)
+
     plt.savefig(filename)
 
 
@@ -50,7 +53,7 @@ def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, t
         ax.legend(labels).set_zorder(10)
 
     plt.tight_layout()
-    filename = os.path.join('..', 'results', filename)
+    filename = os.path.join('results', filename)
     plt.savefig(filename)
 
 
@@ -59,5 +62,5 @@ def save_network_tracking(network_tracking, title, file_name):
     num_plots = len(ratios)
 
     for i, ratio in enumerate(ratios):
-        filename = os.path.join(file_name, "network_tracking({}).net".format(i))
+        filename = os.path.join("results", file_name, "network_tracking({}).net".format(i))
         nx.write_pajek(network_tracking[ratio], filename)
