@@ -6,7 +6,6 @@ import numpy as np
 
 from network_attacks import instantaneous_attack, incremental_attack, incremental_random_failure, \
     instantaneous_random_failure
-from networks import oregon
 from utils.data_saver import save_results
 from utils.network_generation import get_poisson_net, get_power_law_net, get_gnutella
 from utils.visualization import plot_clustering_distribution, plot_metric_distribution, save_network_tracking, \
