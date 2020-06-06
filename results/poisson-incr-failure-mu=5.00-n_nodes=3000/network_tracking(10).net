@@ -1,0 +1,3492 @@
+*vertices 1500
+1 1751 0.0 0.0 ellipse
+2 831 0.0 0.0 ellipse
+3 104 0.0 0.0 ellipse
+4 2936 0.0 0.0 ellipse
+5 565 0.0 0.0 ellipse
+6 392 0.0 0.0 ellipse
+7 846 0.0 0.0 ellipse
+8 346 0.0 0.0 ellipse
+9 2689 0.0 0.0 ellipse
+10 1580 0.0 0.0 ellipse
+11 508 0.0 0.0 ellipse
+12 1501 0.0 0.0 ellipse
+13 1443 0.0 0.0 ellipse
+14 103 0.0 0.0 ellipse
+15 699 0.0 0.0 ellipse
+16 1617 0.0 0.0 ellipse
+17 2542 0.0 0.0 ellipse
+18 1340 0.0 0.0 ellipse
+19 470 0.0 0.0 ellipse
+20 1984 0.0 0.0 ellipse
+21 774 0.0 0.0 ellipse
+22 1643 0.0 0.0 ellipse
+23 426 0.0 0.0 ellipse
+24 452 0.0 0.0 ellipse
+25 2410 0.0 0.0 ellipse
+26 1487 0.0 0.0 ellipse
+27 540 0.0 0.0 ellipse
+28 1130 0.0 0.0 ellipse
+29 2953 0.0 0.0 ellipse
+30 1297 0.0 0.0 ellipse
+31 348 0.0 0.0 ellipse
+32 823 0.0 0.0 ellipse
+33 2348 0.0 0.0 ellipse
+34 2321 0.0 0.0 ellipse
+35 2182 0.0 0.0 ellipse
+36 1033 0.0 0.0 ellipse
+37 1422 0.0 0.0 ellipse
+38 2052 0.0 0.0 ellipse
+39 2305 0.0 0.0 ellipse
+40 1361 0.0 0.0 ellipse
+41 661 0.0 0.0 ellipse
+42 2085 0.0 0.0 ellipse
+43 1739 0.0 0.0 ellipse
+44 2816 0.0 0.0 ellipse
+45 1355 0.0 0.0 ellipse
+46 1776 0.0 0.0 ellipse
+47 2998 0.0 0.0 ellipse
+48 2548 0.0 0.0 ellipse
+49 415 0.0 0.0 ellipse
+50 232 0.0 0.0 ellipse
+51 427 0.0 0.0 ellipse
+52 1097 0.0 0.0 ellipse
+53 2873 0.0 0.0 ellipse
+54 2806 0.0 0.0 ellipse
+55 98 0.0 0.0 ellipse
+56 1115 0.0 0.0 ellipse
+57 1411 0.0 0.0 ellipse
+58 2528 0.0 0.0 ellipse
+59 1813 0.0 0.0 ellipse
+60 1885 0.0 0.0 ellipse
+61 2665 0.0 0.0 ellipse
+62 843 0.0 0.0 ellipse
+63 1073 0.0 0.0 ellipse
+64 273 0.0 0.0 ellipse
+65 651 0.0 0.0 ellipse
+66 1713 0.0 0.0 ellipse
+67 1389 0.0 0.0 ellipse
+68 2762 0.0 0.0 ellipse
+69 2318 0.0 0.0 ellipse
+70 1019 0.0 0.0 ellipse
+71 491 0.0 0.0 ellipse
+72 71 0.0 0.0 ellipse
+73 2576 0.0 0.0 ellipse
+74 2618 0.0 0.0 ellipse
+75 976 0.0 0.0 ellipse
+76 1820 0.0 0.0 ellipse
+77 2202 0.0 0.0 ellipse
+78 488 0.0 0.0 ellipse
+79 2915 0.0 0.0 ellipse
+80 515 0.0 0.0 ellipse
+81 2608 0.0 0.0 ellipse
+82 212 0.0 0.0 ellipse
+83 1699 0.0 0.0 ellipse
+84 1912 0.0 0.0 ellipse
+85 572 0.0 0.0 ellipse
+86 1416 0.0 0.0 ellipse
+87 1170 0.0 0.0 ellipse
+88 521 0.0 0.0 ellipse
+89 924 0.0 0.0 ellipse
+90 2916 0.0 0.0 ellipse
+91 994 0.0 0.0 ellipse
+92 2609 0.0 0.0 ellipse
+93 1882 0.0 0.0 ellipse
+94 926 0.0 0.0 ellipse
+95 1653 0.0 0.0 ellipse
+96 59 0.0 0.0 ellipse
+97 1348 0.0 0.0 ellipse
+98 2212 0.0 0.0 ellipse
+99 2401 0.0 0.0 ellipse
+100 2529 0.0 0.0 ellipse
+101 529 0.0 0.0 ellipse
+102 1334 0.0 0.0 ellipse
+103 1997 0.0 0.0 ellipse
+104 2006 0.0 0.0 ellipse
+105 2405 0.0 0.0 ellipse
+106 250 0.0 0.0 ellipse
+107 1281 0.0 0.0 ellipse
+108 2756 0.0 0.0 ellipse
+109 541 0.0 0.0 ellipse
+110 119 0.0 0.0 ellipse
+111 760 0.0 0.0 ellipse
+112 1060 0.0 0.0 ellipse
+113 2423 0.0 0.0 ellipse
+114 505 0.0 0.0 ellipse
+115 1048 0.0 0.0 ellipse
+116 568 0.0 0.0 ellipse
+117 704 0.0 0.0 ellipse
+118 107 0.0 0.0 ellipse
+119 2458 0.0 0.0 ellipse
+120 253 0.0 0.0 ellipse
+121 2904 0.0 0.0 ellipse
+122 447 0.0 0.0 ellipse
+123 2654 0.0 0.0 ellipse
+124 1899 0.0 0.0 ellipse
+125 848 0.0 0.0 ellipse
+126 2406 0.0 0.0 ellipse
+127 2907 0.0 0.0 ellipse
+128 1631 0.0 0.0 ellipse
+129 1282 0.0 0.0 ellipse
+130 1841 0.0 0.0 ellipse
+131 991 0.0 0.0 ellipse
+132 1944 0.0 0.0 ellipse
+133 2848 0.0 0.0 ellipse
+134 236 0.0 0.0 ellipse
+135 1497 0.0 0.0 ellipse
+136 1901 0.0 0.0 ellipse
+137 1553 0.0 0.0 ellipse
+138 2897 0.0 0.0 ellipse
+139 408 0.0 0.0 ellipse
+140 887 0.0 0.0 ellipse
+141 163 0.0 0.0 ellipse
+142 282 0.0 0.0 ellipse
+143 1012 0.0 0.0 ellipse
+144 1581 0.0 0.0 ellipse
+145 2375 0.0 0.0 ellipse
+146 39 0.0 0.0 ellipse
+147 396 0.0 0.0 ellipse
+148 1419 0.0 0.0 ellipse
+149 252 0.0 0.0 ellipse
+150 230 0.0 0.0 ellipse
+151 1706 0.0 0.0 ellipse
+152 271 0.0 0.0 ellipse
+153 2817 0.0 0.0 ellipse
+154 1421 0.0 0.0 ellipse
+155 980 0.0 0.0 ellipse
+156 248 0.0 0.0 ellipse
+157 2632 0.0 0.0 ellipse
+158 1009 0.0 0.0 ellipse
+159 1661 0.0 0.0 ellipse
+160 1358 0.0 0.0 ellipse
+161 1153 0.0 0.0 ellipse
+162 2648 0.0 0.0 ellipse
+163 2606 0.0 0.0 ellipse
+164 2610 0.0 0.0 ellipse
+165 1585 0.0 0.0 ellipse
+166 1201 0.0 0.0 ellipse
+167 612 0.0 0.0 ellipse
+168 978 0.0 0.0 ellipse
+169 172 0.0 0.0 ellipse
+170 2018 0.0 0.0 ellipse
+171 219 0.0 0.0 ellipse
+172 598 0.0 0.0 ellipse
+173 2891 0.0 0.0 ellipse
+174 124 0.0 0.0 ellipse
+175 1732 0.0 0.0 ellipse
+176 2354 0.0 0.0 ellipse
+177 2872 0.0 0.0 ellipse
+178 1995 0.0 0.0 ellipse
+179 2209 0.0 0.0 ellipse
+180 1462 0.0 0.0 ellipse
+181 2044 0.0 0.0 ellipse
+182 1161 0.0 0.0 ellipse
+183 2172 0.0 0.0 ellipse
+184 1782 0.0 0.0 ellipse
+185 1123 0.0 0.0 ellipse
+186 307 0.0 0.0 ellipse
+187 1959 0.0 0.0 ellipse
+188 1105 0.0 0.0 ellipse
+189 398 0.0 0.0 ellipse
+190 1049 0.0 0.0 ellipse
+191 2394 0.0 0.0 ellipse
+192 2250 0.0 0.0 ellipse
+193 1826 0.0 0.0 ellipse
+194 1238 0.0 0.0 ellipse
+195 2361 0.0 0.0 ellipse
+196 796 0.0 0.0 ellipse
+197 400 0.0 0.0 ellipse
+198 2313 0.0 0.0 ellipse
+199 439 0.0 0.0 ellipse
+200 1536 0.0 0.0 ellipse
+201 1890 0.0 0.0 ellipse
+202 2245 0.0 0.0 ellipse
+203 522 0.0 0.0 ellipse
+204 456 0.0 0.0 ellipse
+205 155 0.0 0.0 ellipse
+206 213 0.0 0.0 ellipse
+207 2333 0.0 0.0 ellipse
+208 2083 0.0 0.0 ellipse
+209 2970 0.0 0.0 ellipse
+210 1762 0.0 0.0 ellipse
+211 1387 0.0 0.0 ellipse
+212 360 0.0 0.0 ellipse
+213 1403 0.0 0.0 ellipse
+214 2399 0.0 0.0 ellipse
+215 1118 0.0 0.0 ellipse
+216 1274 0.0 0.0 ellipse
+217 446 0.0 0.0 ellipse
+218 2263 0.0 0.0 ellipse
+219 1881 0.0 0.0 ellipse
+220 78 0.0 0.0 ellipse
+221 1740 0.0 0.0 ellipse
+222 715 0.0 0.0 ellipse
+223 2120 0.0 0.0 ellipse
+224 1380 0.0 0.0 ellipse
+225 751 0.0 0.0 ellipse
+226 2934 0.0 0.0 ellipse
+227 300 0.0 0.0 ellipse
+228 2964 0.0 0.0 ellipse
+229 2786 0.0 0.0 ellipse
+230 2341 0.0 0.0 ellipse
+231 1134 0.0 0.0 ellipse
+232 1313 0.0 0.0 ellipse
+233 896 0.0 0.0 ellipse
+234 606 0.0 0.0 ellipse
+235 2975 0.0 0.0 ellipse
+236 1089 0.0 0.0 ellipse
+237 1789 0.0 0.0 ellipse
+238 2845 0.0 0.0 ellipse
+239 2069 0.0 0.0 ellipse
+240 2234 0.0 0.0 ellipse
+241 2053 0.0 0.0 ellipse
+242 2655 0.0 0.0 ellipse
+243 1817 0.0 0.0 ellipse
+244 963 0.0 0.0 ellipse
+245 5 0.0 0.0 ellipse
+246 1644 0.0 0.0 ellipse
+247 184 0.0 0.0 ellipse
+248 334 0.0 0.0 ellipse
+249 1301 0.0 0.0 ellipse
+250 2190 0.0 0.0 ellipse
+251 630 0.0 0.0 ellipse
+252 1224 0.0 0.0 ellipse
+253 161 0.0 0.0 ellipse
+254 2811 0.0 0.0 ellipse
+255 2257 0.0 0.0 ellipse
+256 2623 0.0 0.0 ellipse
+257 1316 0.0 0.0 ellipse
+258 150 0.0 0.0 ellipse
+259 2205 0.0 0.0 ellipse
+260 1993 0.0 0.0 ellipse
+261 518 0.0 0.0 ellipse
+262 1745 0.0 0.0 ellipse
+263 1341 0.0 0.0 ellipse
+264 902 0.0 0.0 ellipse
+265 1790 0.0 0.0 ellipse
+266 2224 0.0 0.0 ellipse
+267 1568 0.0 0.0 ellipse
+268 1927 0.0 0.0 ellipse
+269 2403 0.0 0.0 ellipse
+270 2360 0.0 0.0 ellipse
+271 667 0.0 0.0 ellipse
+272 520 0.0 0.0 ellipse
+273 778 0.0 0.0 ellipse
+274 1750 0.0 0.0 ellipse
+275 533 0.0 0.0 ellipse
+276 2649 0.0 0.0 ellipse
+277 2754 0.0 0.0 ellipse
+278 291 0.0 0.0 ellipse
+279 2256 0.0 0.0 ellipse
+280 2682 0.0 0.0 ellipse
+281 2275 0.0 0.0 ellipse
+282 659 0.0 0.0 ellipse
+283 315 0.0 0.0 ellipse
+284 2591 0.0 0.0 ellipse
+285 1261 0.0 0.0 ellipse
+286 1873 0.0 0.0 ellipse
+287 1101 0.0 0.0 ellipse
+288 1851 0.0 0.0 ellipse
+289 411 0.0 0.0 ellipse
+290 2690 0.0 0.0 ellipse
+291 2717 0.0 0.0 ellipse
+292 1080 0.0 0.0 ellipse
+293 2995 0.0 0.0 ellipse
+294 194 0.0 0.0 ellipse
+295 2725 0.0 0.0 ellipse
+296 133 0.0 0.0 ellipse
+297 1704 0.0 0.0 ellipse
+298 2351 0.0 0.0 ellipse
+299 467 0.0 0.0 ellipse
+300 7 0.0 0.0 ellipse
+301 2834 0.0 0.0 ellipse
+302 904 0.0 0.0 ellipse
+303 249 0.0 0.0 ellipse
+304 1458 0.0 0.0 ellipse
+305 1589 0.0 0.0 ellipse
+306 938 0.0 0.0 ellipse
+307 1895 0.0 0.0 ellipse
+308 2760 0.0 0.0 ellipse
+309 1119 0.0 0.0 ellipse
+310 548 0.0 0.0 ellipse
+311 2878 0.0 0.0 ellipse
+312 2512 0.0 0.0 ellipse
+313 1213 0.0 0.0 ellipse
+314 2489 0.0 0.0 ellipse
+315 2613 0.0 0.0 ellipse
+316 223 0.0 0.0 ellipse
+317 2325 0.0 0.0 ellipse
+318 1371 0.0 0.0 ellipse
+319 1257 0.0 0.0 ellipse
+320 1607 0.0 0.0 ellipse
+321 918 0.0 0.0 ellipse
+322 1821 0.0 0.0 ellipse
+323 1698 0.0 0.0 ellipse
+324 1285 0.0 0.0 ellipse
+325 2322 0.0 0.0 ellipse
+326 1889 0.0 0.0 ellipse
+327 2723 0.0 0.0 ellipse
+328 262 0.0 0.0 ellipse
+329 2557 0.0 0.0 ellipse
+330 2680 0.0 0.0 ellipse
+331 1280 0.0 0.0 ellipse
+332 1302 0.0 0.0 ellipse
+333 2469 0.0 0.0 ellipse
+334 2103 0.0 0.0 ellipse
+335 2129 0.0 0.0 ellipse
+336 808 0.0 0.0 ellipse
+337 1423 0.0 0.0 ellipse
+338 12 0.0 0.0 ellipse
+339 549 0.0 0.0 ellipse
+340 1565 0.0 0.0 ellipse
+341 697 0.0 0.0 ellipse
+342 690 0.0 0.0 ellipse
+343 1512 0.0 0.0 ellipse
+344 1228 0.0 0.0 ellipse
+345 2997 0.0 0.0 ellipse
+346 2510 0.0 0.0 ellipse
+347 1085 0.0 0.0 ellipse
+348 1635 0.0 0.0 ellipse
+349 833 0.0 0.0 ellipse
+350 525 0.0 0.0 ellipse
+351 2743 0.0 0.0 ellipse
+352 1505 0.0 0.0 ellipse
+353 1808 0.0 0.0 ellipse
+354 2791 0.0 0.0 ellipse
+355 1356 0.0 0.0 ellipse
+356 2409 0.0 0.0 ellipse
+357 2758 0.0 0.0 ellipse
+358 2106 0.0 0.0 ellipse
+359 321 0.0 0.0 ellipse
+360 506 0.0 0.0 ellipse
+361 1506 0.0 0.0 ellipse
+362 792 0.0 0.0 ellipse
+363 1264 0.0 0.0 ellipse
+364 2246 0.0 0.0 ellipse
+365 211 0.0 0.0 ellipse
+366 693 0.0 0.0 ellipse
+367 1025 0.0 0.0 ellipse
+368 207 0.0 0.0 ellipse
+369 2260 0.0 0.0 ellipse
+370 1570 0.0 0.0 ellipse
+371 2347 0.0 0.0 ellipse
+372 185 0.0 0.0 ellipse
+373 2488 0.0 0.0 ellipse
+374 1677 0.0 0.0 ellipse
+375 2502 0.0 0.0 ellipse
+376 2499 0.0 0.0 ellipse
+377 2448 0.0 0.0 ellipse
+378 1832 0.0 0.0 ellipse
+379 2729 0.0 0.0 ellipse
+380 134 0.0 0.0 ellipse
+381 2824 0.0 0.0 ellipse
+382 1256 0.0 0.0 ellipse
+383 2543 0.0 0.0 ellipse
+384 1807 0.0 0.0 ellipse
+385 1833 0.0 0.0 ellipse
+386 1023 0.0 0.0 ellipse
+387 1850 0.0 0.0 ellipse
+388 2407 0.0 0.0 ellipse
+389 937 0.0 0.0 ellipse
+390 1366 0.0 0.0 ellipse
+391 2533 0.0 0.0 ellipse
+392 1940 0.0 0.0 ellipse
+393 789 0.0 0.0 ellipse
+394 186 0.0 0.0 ellipse
+395 1595 0.0 0.0 ellipse
+396 2127 0.0 0.0 ellipse
+397 2397 0.0 0.0 ellipse
+398 244 0.0 0.0 ellipse
+399 2220 0.0 0.0 ellipse
+400 1910 0.0 0.0 ellipse
+401 337 0.0 0.0 ellipse
+402 2444 0.0 0.0 ellipse
+403 1151 0.0 0.0 ellipse
+404 1583 0.0 0.0 ellipse
+405 77 0.0 0.0 ellipse
+406 2461 0.0 0.0 ellipse
+407 857 0.0 0.0 ellipse
+408 1729 0.0 0.0 ellipse
+409 2523 0.0 0.0 ellipse
+410 1154 0.0 0.0 ellipse
+411 2880 0.0 0.0 ellipse
+412 917 0.0 0.0 ellipse
+413 845 0.0 0.0 ellipse
+414 299 0.0 0.0 ellipse
+415 2254 0.0 0.0 ellipse
+416 886 0.0 0.0 ellipse
+417 2894 0.0 0.0 ellipse
+418 57 0.0 0.0 ellipse
+419 265 0.0 0.0 ellipse
+420 1262 0.0 0.0 ellipse
+421 1400 0.0 0.0 ellipse
+422 2736 0.0 0.0 ellipse
+423 2390 0.0 0.0 ellipse
+424 1220 0.0 0.0 ellipse
+425 2144 0.0 0.0 ellipse
+426 1414 0.0 0.0 ellipse
+427 884 0.0 0.0 ellipse
+428 1468 0.0 0.0 ellipse
+429 1375 0.0 0.0 ellipse
+430 1735 0.0 0.0 ellipse
+431 341 0.0 0.0 ellipse
+432 2174 0.0 0.0 ellipse
+433 1946 0.0 0.0 ellipse
+434 1263 0.0 0.0 ellipse
+435 2919 0.0 0.0 ellipse
+436 2865 0.0 0.0 ellipse
+437 2909 0.0 0.0 ellipse
+438 2869 0.0 0.0 ellipse
+439 1441 0.0 0.0 ellipse
+440 2785 0.0 0.0 ellipse
+441 501 0.0 0.0 ellipse
+442 363 0.0 0.0 ellipse
+443 2204 0.0 0.0 ellipse
+444 1246 0.0 0.0 ellipse
+445 664 0.0 0.0 ellipse
+446 2886 0.0 0.0 ellipse
+447 1007 0.0 0.0 ellipse
+448 2342 0.0 0.0 ellipse
+449 1529 0.0 0.0 ellipse
+450 1703 0.0 0.0 ellipse
+451 128 0.0 0.0 ellipse
+452 1013 0.0 0.0 ellipse
+453 320 0.0 0.0 ellipse
+454 2942 0.0 0.0 ellipse
+455 1961 0.0 0.0 ellipse
+456 1796 0.0 0.0 ellipse
+457 1138 0.0 0.0 ellipse
+458 2946 0.0 0.0 ellipse
+459 2111 0.0 0.0 ellipse
+460 615 0.0 0.0 ellipse
+461 2184 0.0 0.0 ellipse
+462 1803 0.0 0.0 ellipse
+463 1584 0.0 0.0 ellipse
+464 2445 0.0 0.0 ellipse
+465 718 0.0 0.0 ellipse
+466 2560 0.0 0.0 ellipse
+467 2935 0.0 0.0 ellipse
+468 2481 0.0 0.0 ellipse
+469 2001 0.0 0.0 ellipse
+470 2809 0.0 0.0 ellipse
+471 428 0.0 0.0 ellipse
+472 2314 0.0 0.0 ellipse
+473 192 0.0 0.0 ellipse
+474 1741 0.0 0.0 ellipse
+475 2028 0.0 0.0 ellipse
+476 245 0.0 0.0 ellipse
+477 890 0.0 0.0 ellipse
+478 2727 0.0 0.0 ellipse
+479 438 0.0 0.0 ellipse
+480 61 0.0 0.0 ellipse
+481 617 0.0 0.0 ellipse
+482 1836 0.0 0.0 ellipse
+483 1554 0.0 0.0 ellipse
+484 2647 0.0 0.0 ellipse
+485 1206 0.0 0.0 ellipse
+486 1106 0.0 0.0 ellipse
+487 1709 0.0 0.0 ellipse
+488 2624 0.0 0.0 ellipse
+489 2570 0.0 0.0 ellipse
+490 91 0.0 0.0 ellipse
+491 2957 0.0 0.0 ellipse
+492 1286 0.0 0.0 ellipse
+493 2620 0.0 0.0 ellipse
+494 2646 0.0 0.0 ellipse
+495 1177 0.0 0.0 ellipse
+496 814 0.0 0.0 ellipse
+497 649 0.0 0.0 ellipse
+498 1438 0.0 0.0 ellipse
+499 2716 0.0 0.0 ellipse
+500 2023 0.0 0.0 ellipse
+501 2025 0.0 0.0 ellipse
+502 1382 0.0 0.0 ellipse
+503 1843 0.0 0.0 ellipse
+504 216 0.0 0.0 ellipse
+505 2540 0.0 0.0 ellipse
+506 2901 0.0 0.0 ellipse
+507 1271 0.0 0.0 ellipse
+508 2045 0.0 0.0 ellipse
+509 1915 0.0 0.0 ellipse
+510 418 0.0 0.0 ellipse
+511 1992 0.0 0.0 ellipse
+512 2959 0.0 0.0 ellipse
+513 1287 0.0 0.0 ellipse
+514 240 0.0 0.0 ellipse
+515 1133 0.0 0.0 ellipse
+516 2695 0.0 0.0 ellipse
+517 2453 0.0 0.0 ellipse
+518 188 0.0 0.0 ellipse
+519 462 0.0 0.0 ellipse
+520 2697 0.0 0.0 ellipse
+521 1792 0.0 0.0 ellipse
+522 1221 0.0 0.0 ellipse
+523 2268 0.0 0.0 ellipse
+524 2730 0.0 0.0 ellipse
+525 1559 0.0 0.0 ellipse
+526 1390 0.0 0.0 ellipse
+527 156 0.0 0.0 ellipse
+528 2592 0.0 0.0 ellipse
+529 701 0.0 0.0 ellipse
+530 2547 0.0 0.0 ellipse
+531 1172 0.0 0.0 ellipse
+532 1701 0.0 0.0 ellipse
+533 2379 0.0 0.0 ellipse
+534 1656 0.0 0.0 ellipse
+535 2856 0.0 0.0 ellipse
+536 6 0.0 0.0 ellipse
+537 1522 0.0 0.0 ellipse
+538 319 0.0 0.0 ellipse
+539 561 0.0 0.0 ellipse
+540 601 0.0 0.0 ellipse
+541 2123 0.0 0.0 ellipse
+542 786 0.0 0.0 ellipse
+543 710 0.0 0.0 ellipse
+544 1728 0.0 0.0 ellipse
+545 1620 0.0 0.0 ellipse
+546 8 0.0 0.0 ellipse
+547 1440 0.0 0.0 ellipse
+548 2621 0.0 0.0 ellipse
+549 196 0.0 0.0 ellipse
+550 2766 0.0 0.0 ellipse
+551 2323 0.0 0.0 ellipse
+552 1965 0.0 0.0 ellipse
+553 389 0.0 0.0 ellipse
+554 819 0.0 0.0 ellipse
+555 1104 0.0 0.0 ellipse
+556 928 0.0 0.0 ellipse
+557 1431 0.0 0.0 ellipse
+558 371 0.0 0.0 ellipse
+559 1203 0.0 0.0 ellipse
+560 2186 0.0 0.0 ellipse
+561 608 0.0 0.0 ellipse
+562 1081 0.0 0.0 ellipse
+563 828 0.0 0.0 ellipse
+564 464 0.0 0.0 ellipse
+565 953 0.0 0.0 ellipse
+566 2132 0.0 0.0 ellipse
+567 2091 0.0 0.0 ellipse
+568 1179 0.0 0.0 ellipse
+569 190 0.0 0.0 ellipse
+570 1194 0.0 0.0 ellipse
+571 1488 0.0 0.0 ellipse
+572 2960 0.0 0.0 ellipse
+573 728 0.0 0.0 ellipse
+574 2575 0.0 0.0 ellipse
+575 534 0.0 0.0 ellipse
+576 1217 0.0 0.0 ellipse
+577 2164 0.0 0.0 ellipse
+578 1599 0.0 0.0 ellipse
+579 2223 0.0 0.0 ellipse
+580 20 0.0 0.0 ellipse
+581 171 0.0 0.0 ellipse
+582 2191 0.0 0.0 ellipse
+583 2126 0.0 0.0 ellipse
+584 2741 0.0 0.0 ellipse
+585 368 0.0 0.0 ellipse
+586 1432 0.0 0.0 ellipse
+587 2162 0.0 0.0 ellipse
+588 487 0.0 0.0 ellipse
+589 1811 0.0 0.0 ellipse
+590 784 0.0 0.0 ellipse
+591 164 0.0 0.0 ellipse
+592 180 0.0 0.0 ellipse
+593 1865 0.0 0.0 ellipse
+594 1669 0.0 0.0 ellipse
+595 1755 0.0 0.0 ellipse
+596 2768 0.0 0.0 ellipse
+597 1376 0.0 0.0 ellipse
+598 1058 0.0 0.0 ellipse
+599 692 0.0 0.0 ellipse
+600 228 0.0 0.0 ellipse
+601 168 0.0 0.0 ellipse
+602 516 0.0 0.0 ellipse
+603 2713 0.0 0.0 ellipse
+604 84 0.0 0.0 ellipse
+605 1839 0.0 0.0 ellipse
+606 1379 0.0 0.0 ellipse
+607 385 0.0 0.0 ellipse
+608 2033 0.0 0.0 ellipse
+609 1296 0.0 0.0 ellipse
+610 2010 0.0 0.0 ellipse
+611 11 0.0 0.0 ellipse
+612 1840 0.0 0.0 ellipse
+613 1898 0.0 0.0 ellipse
+614 1283 0.0 0.0 ellipse
+615 2994 0.0 0.0 ellipse
+616 987 0.0 0.0 ellipse
+617 101 0.0 0.0 ellipse
+618 804 0.0 0.0 ellipse
+619 2554 0.0 0.0 ellipse
+620 1937 0.0 0.0 ellipse
+621 2105 0.0 0.0 ellipse
+622 2819 0.0 0.0 ellipse
+623 2830 0.0 0.0 ellipse
+624 1655 0.0 0.0 ellipse
+625 2733 0.0 0.0 ellipse
+626 1014 0.0 0.0 ellipse
+627 2534 0.0 0.0 ellipse
+628 1622 0.0 0.0 ellipse
+629 1982 0.0 0.0 ellipse
+630 2990 0.0 0.0 ellipse
+631 325 0.0 0.0 ellipse
+632 995 0.0 0.0 ellipse
+633 2843 0.0 0.0 ellipse
+634 60 0.0 0.0 ellipse
+635 555 0.0 0.0 ellipse
+636 1417 0.0 0.0 ellipse
+637 416 0.0 0.0 ellipse
+638 47 0.0 0.0 ellipse
+639 2051 0.0 0.0 ellipse
+640 1342 0.0 0.0 ellipse
+641 2269 0.0 0.0 ellipse
+642 1037 0.0 0.0 ellipse
+643 2265 0.0 0.0 ellipse
+644 1378 0.0 0.0 ellipse
+645 1818 0.0 0.0 ellipse
+646 480 0.0 0.0 ellipse
+647 135 0.0 0.0 ellipse
+648 13 0.0 0.0 ellipse
+649 759 0.0 0.0 ellipse
+650 2656 0.0 0.0 ellipse
+651 992 0.0 0.0 ellipse
+652 954 0.0 0.0 ellipse
+653 197 0.0 0.0 ellipse
+654 21 0.0 0.0 ellipse
+655 1054 0.0 0.0 ellipse
+656 1463 0.0 0.0 ellipse
+657 959 0.0 0.0 ellipse
+658 1605 0.0 0.0 ellipse
+659 865 0.0 0.0 ellipse
+660 787 0.0 0.0 ellipse
+661 2082 0.0 0.0 ellipse
+662 29 0.0 0.0 ellipse
+663 1681 0.0 0.0 ellipse
+664 2521 0.0 0.0 ellipse
+665 951 0.0 0.0 ellipse
+666 1288 0.0 0.0 ellipse
+667 2104 0.0 0.0 ellipse
+668 1039 0.0 0.0 ellipse
+669 563 0.0 0.0 ellipse
+670 1645 0.0 0.0 ellipse
+671 2396 0.0 0.0 ellipse
+672 810 0.0 0.0 ellipse
+673 662 0.0 0.0 ellipse
+674 2355 0.0 0.0 ellipse
+675 2585 0.0 0.0 ellipse
+676 445 0.0 0.0 ellipse
+677 1633 0.0 0.0 ellipse
+678 613 0.0 0.0 ellipse
+679 330 0.0 0.0 ellipse
+680 191 0.0 0.0 ellipse
+681 1459 0.0 0.0 ellipse
+682 367 0.0 0.0 ellipse
+683 1761 0.0 0.0 ellipse
+684 435 0.0 0.0 ellipse
+685 581 0.0 0.0 ellipse
+686 966 0.0 0.0 ellipse
+687 624 0.0 0.0 ellipse
+688 2107 0.0 0.0 ellipse
+689 1344 0.0 0.0 ellipse
+690 2562 0.0 0.0 ellipse
+691 302 0.0 0.0 ellipse
+692 165 0.0 0.0 ellipse
+693 2049 0.0 0.0 ellipse
+694 2416 0.0 0.0 ellipse
+695 267 0.0 0.0 ellipse
+696 2870 0.0 0.0 ellipse
+697 2779 0.0 0.0 ellipse
+698 1502 0.0 0.0 ellipse
+699 1981 0.0 0.0 ellipse
+700 2840 0.0 0.0 ellipse
+701 1663 0.0 0.0 ellipse
+702 975 0.0 0.0 ellipse
+703 1112 0.0 0.0 ellipse
+704 2096 0.0 0.0 ellipse
+705 898 0.0 0.0 ellipse
+706 2474 0.0 0.0 ellipse
+707 672 0.0 0.0 ellipse
+708 2095 0.0 0.0 ellipse
+709 1939 0.0 0.0 ellipse
+710 742 0.0 0.0 ellipse
+711 2021 0.0 0.0 ellipse
+712 900 0.0 0.0 ellipse
+713 1303 0.0 0.0 ellipse
+714 2253 0.0 0.0 ellipse
+715 564 0.0 0.0 ellipse
+716 2038 0.0 0.0 ellipse
+717 983 0.0 0.0 ellipse
+718 146 0.0 0.0 ellipse
+719 116 0.0 0.0 ellipse
+720 1676 0.0 0.0 ellipse
+721 1693 0.0 0.0 ellipse
+722 1185 0.0 0.0 ellipse
+723 401 0.0 0.0 ellipse
+724 587 0.0 0.0 ellipse
+725 2583 0.0 0.0 ellipse
+726 1323 0.0 0.0 ellipse
+727 1929 0.0 0.0 ellipse
+728 643 0.0 0.0 ellipse
+729 289 0.0 0.0 ellipse
+730 1630 0.0 0.0 ellipse
+731 486 0.0 0.0 ellipse
+732 1327 0.0 0.0 ellipse
+733 2237 0.0 0.0 ellipse
+734 1107 0.0 0.0 ellipse
+735 473 0.0 0.0 ellipse
+736 33 0.0 0.0 ellipse
+737 741 0.0 0.0 ellipse
+738 911 0.0 0.0 ellipse
+739 1689 0.0 0.0 ellipse
+740 131 0.0 0.0 ellipse
+741 366 0.0 0.0 ellipse
+742 1090 0.0 0.0 ellipse
+743 523 0.0 0.0 ellipse
+744 2945 0.0 0.0 ellipse
+745 920 0.0 0.0 ellipse
+746 1350 0.0 0.0 ellipse
+747 36 0.0 0.0 ellipse
+748 1480 0.0 0.0 ellipse
+749 2098 0.0 0.0 ellipse
+750 2839 0.0 0.0 ellipse
+751 818 0.0 0.0 ellipse
+752 2430 0.0 0.0 ellipse
+753 2938 0.0 0.0 ellipse
+754 1904 0.0 0.0 ellipse
+755 1614 0.0 0.0 ellipse
+756 2297 0.0 0.0 ellipse
+757 1962 0.0 0.0 ellipse
+758 1561 0.0 0.0 ellipse
+759 591 0.0 0.0 ellipse
+760 2950 0.0 0.0 ellipse
+761 2373 0.0 0.0 ellipse
+762 147 0.0 0.0 ellipse
+763 45 0.0 0.0 ellipse
+764 2440 0.0 0.0 ellipse
+765 2948 0.0 0.0 ellipse
+766 1687 0.0 0.0 ellipse
+767 826 0.0 0.0 ellipse
+768 1399 0.0 0.0 ellipse
+769 1325 0.0 0.0 ellipse
+770 2494 0.0 0.0 ellipse
+771 1708 0.0 0.0 ellipse
+772 712 0.0 0.0 ellipse
+773 806 0.0 0.0 ellipse
+774 785 0.0 0.0 ellipse
+775 431 0.0 0.0 ellipse
+776 2179 0.0 0.0 ellipse
+777 2130 0.0 0.0 ellipse
+778 68 0.0 0.0 ellipse
+779 907 0.0 0.0 ellipse
+780 1111 0.0 0.0 ellipse
+781 1061 0.0 0.0 ellipse
+782 118 0.0 0.0 ellipse
+783 2175 0.0 0.0 ellipse
+784 2747 0.0 0.0 ellipse
+785 58 0.0 0.0 ellipse
+786 2567 0.0 0.0 ellipse
+787 939 0.0 0.0 ellipse
+788 2439 0.0 0.0 ellipse
+789 1071 0.0 0.0 ellipse
+790 2140 0.0 0.0 ellipse
+791 402 0.0 0.0 ellipse
+792 1116 0.0 0.0 ellipse
+793 1827 0.0 0.0 ellipse
+794 2802 0.0 0.0 ellipse
+795 2582 0.0 0.0 ellipse
+796 1489 0.0 0.0 ellipse
+797 714 0.0 0.0 ellipse
+798 1541 0.0 0.0 ellipse
+799 1777 0.0 0.0 ellipse
+800 1499 0.0 0.0 ellipse
+801 1420 0.0 0.0 ellipse
+802 2954 0.0 0.0 ellipse
+803 1268 0.0 0.0 ellipse
+804 1846 0.0 0.0 ellipse
+805 472 0.0 0.0 ellipse
+806 847 0.0 0.0 ellipse
+807 1574 0.0 0.0 ellipse
+808 1381 0.0 0.0 ellipse
+809 1996 0.0 0.0 ellipse
+810 676 0.0 0.0 ellipse
+811 509 0.0 0.0 ellipse
+812 405 0.0 0.0 ellipse
+813 1131 0.0 0.0 ellipse
+814 1163 0.0 0.0 ellipse
+815 619 0.0 0.0 ellipse
+816 2421 0.0 0.0 ellipse
+817 1064 0.0 0.0 ellipse
+818 1424 0.0 0.0 ellipse
+819 2203 0.0 0.0 ellipse
+820 574 0.0 0.0 ellipse
+821 1830 0.0 0.0 ellipse
+822 1464 0.0 0.0 ellipse
+823 2008 0.0 0.0 ellipse
+824 1496 0.0 0.0 ellipse
+825 2863 0.0 0.0 ellipse
+826 2188 0.0 0.0 ellipse
+827 2178 0.0 0.0 ellipse
+828 2426 0.0 0.0 ellipse
+829 329 0.0 0.0 ellipse
+830 1011 0.0 0.0 ellipse
+831 1877 0.0 0.0 ellipse
+832 2244 0.0 0.0 ellipse
+833 748 0.0 0.0 ellipse
+834 1715 0.0 0.0 ellipse
+835 1670 0.0 0.0 ellipse
+836 198 0.0 0.0 ellipse
+837 1950 0.0 0.0 ellipse
+838 2561 0.0 0.0 ellipse
+839 635 0.0 0.0 ellipse
+840 816 0.0 0.0 ellipse
+841 345 0.0 0.0 ellipse
+842 1809 0.0 0.0 ellipse
+843 2020 0.0 0.0 ellipse
+844 1040 0.0 0.0 ellipse
+845 767 0.0 0.0 ellipse
+846 2902 0.0 0.0 ellipse
+847 2813 0.0 0.0 ellipse
+848 935 0.0 0.0 ellipse
+849 2074 0.0 0.0 ellipse
+850 2799 0.0 0.0 ellipse
+851 620 0.0 0.0 ellipse
+852 2218 0.0 0.0 ellipse
+853 72 0.0 0.0 ellipse
+854 511 0.0 0.0 ellipse
+855 2549 0.0 0.0 ellipse
+856 640 0.0 0.0 ellipse
+857 2956 0.0 0.0 ellipse
+858 642 0.0 0.0 ellipse
+859 829 0.0 0.0 ellipse
+860 2097 0.0 0.0 ellipse
+861 215 0.0 0.0 ellipse
+862 1779 0.0 0.0 ellipse
+863 910 0.0 0.0 ellipse
+864 2881 0.0 0.0 ellipse
+865 2308 0.0 0.0 ellipse
+866 260 0.0 0.0 ellipse
+867 559 0.0 0.0 ellipse
+868 2141 0.0 0.0 ellipse
+869 2117 0.0 0.0 ellipse
+870 14 0.0 0.0 ellipse
+871 573 0.0 0.0 ellipse
+872 2794 0.0 0.0 ellipse
+873 35 0.0 0.0 ellipse
+874 2774 0.0 0.0 ellipse
+875 1306 0.0 0.0 ellipse
+876 2981 0.0 0.0 ellipse
+877 588 0.0 0.0 ellipse
+878 1495 0.0 0.0 ellipse
+879 2142 0.0 0.0 ellipse
+880 849 0.0 0.0 ellipse
+881 1989 0.0 0.0 ellipse
+882 1346 0.0 0.0 ellipse
+883 2740 0.0 0.0 ellipse
+884 2812 0.0 0.0 ellipse
+885 931 0.0 0.0 ellipse
+886 2236 0.0 0.0 ellipse
+887 637 0.0 0.0 ellipse
+888 2825 0.0 0.0 ellipse
+889 584 0.0 0.0 ellipse
+890 2480 0.0 0.0 ellipse
+891 2151 0.0 0.0 ellipse
+892 1990 0.0 0.0 ellipse
+893 1780 0.0 0.0 ellipse
+894 1074 0.0 0.0 ellipse
+895 1026 0.0 0.0 ellipse
+896 490 0.0 0.0 ellipse
+897 732 0.0 0.0 ellipse
+898 1601 0.0 0.0 ellipse
+899 2912 0.0 0.0 ellipse
+900 2546 0.0 0.0 ellipse
+901 1538 0.0 0.0 ellipse
+902 2005 0.0 0.0 ellipse
+903 855 0.0 0.0 ellipse
+904 1804 0.0 0.0 ellipse
+905 2046 0.0 0.0 ellipse
+906 2288 0.0 0.0 ellipse
+907 666 0.0 0.0 ellipse
+908 952 0.0 0.0 ellipse
+909 1665 0.0 0.0 ellipse
+910 1166 0.0 0.0 ellipse
+911 2346 0.0 0.0 ellipse
+912 19 0.0 0.0 ellipse
+913 665 0.0 0.0 ellipse
+914 279 0.0 0.0 ellipse
+915 1909 0.0 0.0 ellipse
+916 2113 0.0 0.0 ellipse
+917 414 0.0 0.0 ellipse
+918 2154 0.0 0.0 ellipse
+919 2306 0.0 0.0 ellipse
+920 2889 0.0 0.0 ellipse
+921 201 0.0 0.0 ellipse
+922 2846 0.0 0.0 ellipse
+923 1938 0.0 0.0 ellipse
+924 962 0.0 0.0 ellipse
+925 254 0.0 0.0 ellipse
+926 1639 0.0 0.0 ellipse
+927 1875 0.0 0.0 ellipse
+928 1985 0.0 0.0 ellipse
+929 1242 0.0 0.0 ellipse
+930 950 0.0 0.0 ellipse
+931 2118 0.0 0.0 ellipse
+932 1146 0.0 0.0 ellipse
+933 2177 0.0 0.0 ellipse
+934 2340 0.0 0.0 ellipse
+935 834 0.0 0.0 ellipse
+936 851 0.0 0.0 ellipse
+937 276 0.0 0.0 ellipse
+938 2080 0.0 0.0 ellipse
+939 960 0.0 0.0 ellipse
+940 1860 0.0 0.0 ellipse
+941 1160 0.0 0.0 ellipse
+942 2299 0.0 0.0 ellipse
+943 2792 0.0 0.0 ellipse
+944 1544 0.0 0.0 ellipse
+945 663 0.0 0.0 ellipse
+946 1088 0.0 0.0 ellipse
+947 580 0.0 0.0 ellipse
+948 2821 0.0 0.0 ellipse
+949 1255 0.0 0.0 ellipse
+950 2247 0.0 0.0 ellipse
+951 1169 0.0 0.0 ellipse
+952 1406 0.0 0.0 ellipse
+953 755 0.0 0.0 ellipse
+954 169 0.0 0.0 ellipse
+955 143 0.0 0.0 ellipse
+956 2495 0.0 0.0 ellipse
+957 384 0.0 0.0 ellipse
+958 2284 0.0 0.0 ellipse
+959 2731 0.0 0.0 ellipse
+960 2801 0.0 0.0 ellipse
+961 1364 0.0 0.0 ellipse
+962 2746 0.0 0.0 ellipse
+963 982 0.0 0.0 ellipse
+964 136 0.0 0.0 ellipse
+965 356 0.0 0.0 ellipse
+966 636 0.0 0.0 ellipse
+967 22 0.0 0.0 ellipse
+968 1482 0.0 0.0 ellipse
+969 2293 0.0 0.0 ellipse
+970 1793 0.0 0.0 ellipse
+971 1758 0.0 0.0 ellipse
+972 1610 0.0 0.0 ellipse
+973 531 0.0 0.0 ellipse
+974 576 0.0 0.0 ellipse
+975 2917 0.0 0.0 ellipse
+976 2352 0.0 0.0 ellipse
+977 1662 0.0 0.0 ellipse
+978 947 0.0 0.0 ellipse
+979 2259 0.0 0.0 ellipse
+980 1550 0.0 0.0 ellipse
+981 593 0.0 0.0 ellipse
+982 2066 0.0 0.0 ellipse
+983 1526 0.0 0.0 ellipse
+984 2217 0.0 0.0 ellipse
+985 1275 0.0 0.0 ellipse
+986 339 0.0 0.0 ellipse
+987 2200 0.0 0.0 ellipse
+988 1267 0.0 0.0 ellipse
+989 2451 0.0 0.0 ellipse
+990 2017 0.0 0.0 ellipse
+991 205 0.0 0.0 ellipse
+992 2232 0.0 0.0 ellipse
+993 2424 0.0 0.0 ellipse
+994 2709 0.0 0.0 ellipse
+995 55 0.0 0.0 ellipse
+996 713 0.0 0.0 ellipse
+997 2927 0.0 0.0 ellipse
+998 316 0.0 0.0 ellipse
+999 655 0.0 0.0 ellipse
+1000 2156 0.0 0.0 ellipse
+1001 1749 0.0 0.0 ellipse
+1002 2658 0.0 0.0 ellipse
+1003 2771 0.0 0.0 ellipse
+1004 837 0.0 0.0 ellipse
+1005 2678 0.0 0.0 ellipse
+1006 441 0.0 0.0 ellipse
+1007 2291 0.0 0.0 ellipse
+1008 955 0.0 0.0 ellipse
+1009 825 0.0 0.0 ellipse
+1010 2599 0.0 0.0 ellipse
+1011 493 0.0 0.0 ellipse
+1012 2890 0.0 0.0 ellipse
+1013 1960 0.0 0.0 ellipse
+1014 347 0.0 0.0 ellipse
+1015 1003 0.0 0.0 ellipse
+1016 2569 0.0 0.0 ellipse
+1017 2134 0.0 0.0 ellipse
+1018 2581 0.0 0.0 ellipse
+1019 2574 0.0 0.0 ellipse
+1020 1571 0.0 0.0 ellipse
+1021 776 0.0 0.0 ellipse
+1022 716 0.0 0.0 ellipse
+1023 1178 0.0 0.0 ellipse
+1024 2242 0.0 0.0 ellipse
+1025 498 0.0 0.0 ellipse
+1026 1964 0.0 0.0 ellipse
+1027 2462 0.0 0.0 ellipse
+1028 1994 0.0 0.0 ellipse
+1029 1167 0.0 0.0 ellipse
+1030 94 0.0 0.0 ellipse
+1031 1668 0.0 0.0 ellipse
+1032 658 0.0 0.0 ellipse
+1033 475 0.0 0.0 ellipse
+1034 1075 0.0 0.0 ellipse
+1035 1967 0.0 0.0 ellipse
+1036 1245 0.0 0.0 ellipse
+1037 1609 0.0 0.0 ellipse
+1038 1787 0.0 0.0 ellipse
+1039 1038 0.0 0.0 ellipse
+1040 922 0.0 0.0 ellipse
+1041 2307 0.0 0.0 ellipse
+1042 336 0.0 0.0 ellipse
+1043 840 0.0 0.0 ellipse
+1044 2714 0.0 0.0 ellipse
+1045 1083 0.0 0.0 ellipse
+1046 1578 0.0 0.0 ellipse
+1047 2930 0.0 0.0 ellipse
+1048 259 0.0 0.0 ellipse
+1049 237 0.0 0.0 ellipse
+1050 1222 0.0 0.0 ellipse
+1051 2391 0.0 0.0 ellipse
+1052 2914 0.0 0.0 ellipse
+1053 2276 0.0 0.0 ellipse
+1054 1277 0.0 0.0 ellipse
+1055 449 0.0 0.0 ellipse
+1056 93 0.0 0.0 ellipse
+1057 2775 0.0 0.0 ellipse
+1058 2226 0.0 0.0 ellipse
+1059 1289 0.0 0.0 ellipse
+1060 1593 0.0 0.0 ellipse
+1061 2070 0.0 0.0 ellipse
+1062 256 0.0 0.0 ellipse
+1063 2706 0.0 0.0 ellipse
+1064 2724 0.0 0.0 ellipse
+1065 1768 0.0 0.0 ellipse
+1066 129 0.0 0.0 ellipse
+1067 2615 0.0 0.0 ellipse
+1068 1479 0.0 0.0 ellipse
+1069 280 0.0 0.0 ellipse
+1070 1223 0.0 0.0 ellipse
+1071 1675 0.0 0.0 ellipse
+1072 2790 0.0 0.0 ellipse
+1073 2155 0.0 0.0 ellipse
+1074 1641 0.0 0.0 ellipse
+1075 575 0.0 0.0 ellipse
+1076 1988 0.0 0.0 ellipse
+1077 49 0.0 0.0 ellipse
+1078 949 0.0 0.0 ellipse
+1079 2454 0.0 0.0 ellipse
+1080 1971 0.0 0.0 ellipse
+1081 675 0.0 0.0 ellipse
+1082 2551 0.0 0.0 ellipse
+1083 1604 0.0 0.0 ellipse
+1084 708 0.0 0.0 ellipse
+1085 906 0.0 0.0 ellipse
+1086 1174 0.0 0.0 ellipse
+1087 1592 0.0 0.0 ellipse
+1088 54 0.0 0.0 ellipse
+1089 1229 0.0 0.0 ellipse
+1090 2230 0.0 0.0 ellipse
+1091 2833 0.0 0.0 ellipse
+1092 2605 0.0 0.0 ellipse
+1093 1539 0.0 0.0 ellipse
+1094 2612 0.0 0.0 ellipse
+1095 1546 0.0 0.0 ellipse
+1096 376 0.0 0.0 ellipse
+1097 53 0.0 0.0 ellipse
+1098 2249 0.0 0.0 ellipse
+1099 478 0.0 0.0 ellipse
+1100 251 0.0 0.0 ellipse
+1101 322 0.0 0.0 ellipse
+1102 1848 0.0 0.0 ellipse
+1103 744 0.0 0.0 ellipse
+1104 2860 0.0 0.0 ellipse
+1105 1866 0.0 0.0 ellipse
+1106 2459 0.0 0.0 ellipse
+1107 1320 0.0 0.0 ellipse
+1108 2864 0.0 0.0 ellipse
+1109 724 0.0 0.0 ellipse
+1110 1248 0.0 0.0 ellipse
+1111 2166 0.0 0.0 ellipse
+1112 1765 0.0 0.0 ellipse
+1113 1932 0.0 0.0 ellipse
+1114 691 0.0 0.0 ellipse
+1115 2128 0.0 0.0 ellipse
+1116 2651 0.0 0.0 ellipse
+1117 2877 0.0 0.0 ellipse
+1118 2055 0.0 0.0 ellipse
+1119 221 0.0 0.0 ellipse
+1120 779 0.0 0.0 ellipse
+1121 2312 0.0 0.0 ellipse
+1122 1485 0.0 0.0 ellipse
+1123 2119 0.0 0.0 ellipse
+1124 2320 0.0 0.0 ellipse
+1125 680 0.0 0.0 ellipse
+1126 1577 0.0 0.0 ellipse
+1127 1838 0.0 0.0 ellipse
+1128 1650 0.0 0.0 ellipse
+1129 1056 0.0 0.0 ellipse
+1130 1230 0.0 0.0 ellipse
+1131 242 0.0 0.0 ellipse
+1132 1674 0.0 0.0 ellipse
+1133 2063 0.0 0.0 ellipse
+1134 485 0.0 0.0 ellipse
+1135 1095 0.0 0.0 ellipse
+1136 2861 0.0 0.0 ellipse
+1137 875 0.0 0.0 ellipse
+1138 335 0.0 0.0 ellipse
+1139 670 0.0 0.0 ellipse
+1140 162 0.0 0.0 ellipse
+1141 2026 0.0 0.0 ellipse
+1142 1931 0.0 0.0 ellipse
+1143 1042 0.0 0.0 ellipse
+1144 2041 0.0 0.0 ellipse
+1145 867 0.0 0.0 ellipse
+1146 2641 0.0 0.0 ellipse
+1147 1345 0.0 0.0 ellipse
+1148 2805 0.0 0.0 ellipse
+1149 2761 0.0 0.0 ellipse
+1150 1673 0.0 0.0 ellipse
+1151 183 0.0 0.0 ellipse
+1152 524 0.0 0.0 ellipse
+1153 18 0.0 0.0 ellipse
+1154 2047 0.0 0.0 ellipse
+1155 2696 0.0 0.0 ellipse
+1156 1087 0.0 0.0 ellipse
+1157 1880 0.0 0.0 ellipse
+1158 1933 0.0 0.0 ellipse
+1159 2457 0.0 0.0 ellipse
+1160 364 0.0 0.0 ellipse
+1161 2214 0.0 0.0 ellipse
+1162 2947 0.0 0.0 ellipse
+1163 1365 0.0 0.0 ellipse
+1164 2362 0.0 0.0 ellipse
+1165 2617 0.0 0.0 ellipse
+1166 673 0.0 0.0 ellipse
+1167 56 0.0 0.0 ellipse
+1168 1597 0.0 0.0 ellipse
+1169 803 0.0 0.0 ellipse
+1170 2553 0.0 0.0 ellipse
+1171 1227 0.0 0.0 ellipse
+1172 2289 0.0 0.0 ellipse
+1173 832 0.0 0.0 ellipse
+1174 883 0.0 0.0 ellipse
+1175 1298 0.0 0.0 ellipse
+1176 1435 0.0 0.0 ellipse
+1177 1270 0.0 0.0 ellipse
+1178 2425 0.0 0.0 ellipse
+1179 993 0.0 0.0 ellipse
+1180 2075 0.0 0.0 ellipse
+1181 631 0.0 0.0 ellipse
+1182 2896 0.0 0.0 ellipse
+1183 2952 0.0 0.0 ellipse
+1184 2596 0.0 0.0 ellipse
+1185 2229 0.0 0.0 ellipse
+1186 909 0.0 0.0 ellipse
+1187 2271 0.0 0.0 ellipse
+1188 2622 0.0 0.0 ellipse
+1189 313 0.0 0.0 ellipse
+1190 1467 0.0 0.0 ellipse
+1191 775 0.0 0.0 ellipse
+1192 1897 0.0 0.0 ellipse
+1193 2366 0.0 0.0 ellipse
+1194 2589 0.0 0.0 ellipse
+1195 569 0.0 0.0 ellipse
+1196 2252 0.0 0.0 ellipse
+1197 1754 0.0 0.0 ellipse
+1198 139 0.0 0.0 ellipse
+1199 696 0.0 0.0 ellipse
+1200 1202 0.0 0.0 ellipse
+1201 1148 0.0 0.0 ellipse
+1202 2504 0.0 0.0 ellipse
+1203 1333 0.0 0.0 ellipse
+1204 2208 0.0 0.0 ellipse
+1205 305 0.0 0.0 ellipse
+1206 737 0.0 0.0 ellipse
+1207 1520 0.0 0.0 ellipse
+1208 526 0.0 0.0 ellipse
+1209 1374 0.0 0.0 ellipse
+1210 618 0.0 0.0 ellipse
+1211 354 0.0 0.0 ellipse
+1212 1173 0.0 0.0 ellipse
+1213 2982 0.0 0.0 ellipse
+1214 1109 0.0 0.0 ellipse
+1215 1446 0.0 0.0 ellipse
+1216 2022 0.0 0.0 ellipse
+1217 1862 0.0 0.0 ellipse
+1218 1535 0.0 0.0 ellipse
+1219 2742 0.0 0.0 ellipse
+1220 40 0.0 0.0 ellipse
+1221 1721 0.0 0.0 ellipse
+1222 226 0.0 0.0 ellipse
+1223 502 0.0 0.0 ellipse
+1224 1145 0.0 0.0 ellipse
+1225 535 0.0 0.0 ellipse
+1226 1326 0.0 0.0 ellipse
+1227 2084 0.0 0.0 ellipse
+1228 1191 0.0 0.0 ellipse
+1229 2593 0.0 0.0 ellipse
+1230 2452 0.0 0.0 ellipse
+1231 2506 0.0 0.0 ellipse
+1232 1834 0.0 0.0 ellipse
+1233 1616 0.0 0.0 ellipse
+1234 1942 0.0 0.0 ellipse
+1235 2661 0.0 0.0 ellipse
+1236 1188 0.0 0.0 ellipse
+1237 2304 0.0 0.0 ellipse
+1238 442 0.0 0.0 ellipse
+1239 677 0.0 0.0 ellipse
+1240 916 0.0 0.0 ellipse
+1241 463 0.0 0.0 ellipse
+1242 2213 0.0 0.0 ellipse
+1243 2943 0.0 0.0 ellipse
+1244 1612 0.0 0.0 ellipse
+1245 745 0.0 0.0 ellipse
+1246 451 0.0 0.0 ellipse
+1247 780 0.0 0.0 ellipse
+1248 1540 0.0 0.0 ellipse
+1249 2281 0.0 0.0 ellipse
+1250 1053 0.0 0.0 ellipse
+1251 1640 0.0 0.0 ellipse
+1252 471 0.0 0.0 ellipse
+1253 1405 0.0 0.0 ellipse
+1254 507 0.0 0.0 ellipse
+1255 2614 0.0 0.0 ellipse
+1256 1196 0.0 0.0 ellipse
+1257 2216 0.0 0.0 ellipse
+1258 97 0.0 0.0 ellipse
+1259 1102 0.0 0.0 ellipse
+1260 965 0.0 0.0 ellipse
+1261 2798 0.0 0.0 ellipse
+1262 370 0.0 0.0 ellipse
+1263 83 0.0 0.0 ellipse
+1264 1347 0.0 0.0 ellipse
+1265 2090 0.0 0.0 ellipse
+1266 513 0.0 0.0 ellipse
+1267 2501 0.0 0.0 ellipse
+1268 2404 0.0 0.0 ellipse
+1269 1391 0.0 0.0 ellipse
+1270 395 0.0 0.0 ellipse
+1271 1883 0.0 0.0 ellipse
+1272 2989 0.0 0.0 ellipse
+1273 2545 0.0 0.0 ellipse
+1274 1292 0.0 0.0 ellipse
+1275 222 0.0 0.0 ellipse
+1276 1763 0.0 0.0 ellipse
+1277 1384 0.0 0.0 ellipse
+1278 1724 0.0 0.0 ellipse
+1279 1816 0.0 0.0 ellipse
+1280 1874 0.0 0.0 ellipse
+1281 2235 0.0 0.0 ellipse
+1282 616 0.0 0.0 ellipse
+1283 1611 0.0 0.0 ellipse
+1284 2316 0.0 0.0 ellipse
+1285 2059 0.0 0.0 ellipse
+1286 2303 0.0 0.0 ellipse
+1287 482 0.0 0.0 ellipse
+1288 1764 0.0 0.0 ellipse
+1289 437 0.0 0.0 ellipse
+1290 432 0.0 0.0 ellipse
+1291 2893 0.0 0.0 ellipse
+1292 399 0.0 0.0 ellipse
+1293 614 0.0 0.0 ellipse
+1294 2693 0.0 0.0 ellipse
+1295 1091 0.0 0.0 ellipse
+1296 899 0.0 0.0 ellipse
+1297 1031 0.0 0.0 ellipse
+1298 246 0.0 0.0 ellipse
+1299 1948 0.0 0.0 ellipse
+1300 1195 0.0 0.0 ellipse
+1301 1157 0.0 0.0 ellipse
+1302 652 0.0 0.0 ellipse
+1303 2261 0.0 0.0 ellipse
+1304 2672 0.0 0.0 ellipse
+1305 684 0.0 0.0 ellipse
+1306 2538 0.0 0.0 ellipse
+1307 379 0.0 0.0 ellipse
+1308 2594 0.0 0.0 ellipse
+1309 15 0.0 0.0 ellipse
+1310 1800 0.0 0.0 ellipse
+1311 2598 0.0 0.0 ellipse
+1312 80 0.0 0.0 ellipse
+1313 82 0.0 0.0 ellipse
+1314 2734 0.0 0.0 ellipse
+1315 629 0.0 0.0 ellipse
+1316 407 0.0 0.0 ellipse
+1317 210 0.0 0.0 ellipse
+1318 711 0.0 0.0 ellipse
+1319 2854 0.0 0.0 ellipse
+1320 2497 0.0 0.0 ellipse
+1321 1394 0.0 0.0 ellipse
+1322 200 0.0 0.0 ellipse
+1323 641 0.0 0.0 ellipse
+1324 1113 0.0 0.0 ellipse
+1325 410 0.0 0.0 ellipse
+1326 96 0.0 0.0 ellipse
+1327 224 0.0 0.0 ellipse
+1328 519 0.0 0.0 ellipse
+1329 1214 0.0 0.0 ellipse
+1330 285 0.0 0.0 ellipse
+1331 919 0.0 0.0 ellipse
+1332 1503 0.0 0.0 ellipse
+1333 2782 0.0 0.0 ellipse
+1334 1591 0.0 0.0 ellipse
+1335 28 0.0 0.0 ellipse
+1336 731 0.0 0.0 ellipse
+1337 2165 0.0 0.0 ellipse
+1338 990 0.0 0.0 ellipse
+1339 1357 0.0 0.0 ellipse
+1340 1165 0.0 0.0 ellipse
+1341 948 0.0 0.0 ellipse
+1342 1524 0.0 0.0 ellipse
+1343 1094 0.0 0.0 ellipse
+1344 2058 0.0 0.0 ellipse
+1345 1043 0.0 0.0 ellipse
+1346 870 0.0 0.0 ellipse
+1347 1319 0.0 0.0 ellipse
+1348 1122 0.0 0.0 ellipse
+1349 743 0.0 0.0 ellipse
+1350 2109 0.0 0.0 ellipse
+1351 2408 0.0 0.0 ellipse
+1352 1869 0.0 0.0 ellipse
+1353 1293 0.0 0.0 ellipse
+1354 841 0.0 0.0 ellipse
+1355 893 0.0 0.0 ellipse
+1356 2859 0.0 0.0 ellipse
+1357 2999 0.0 0.0 ellipse
+1358 602 0.0 0.0 ellipse
+1359 801 0.0 0.0 ellipse
+1360 1232 0.0 0.0 ellipse
+1361 1621 0.0 0.0 ellipse
+1362 1147 0.0 0.0 ellipse
+1363 1788 0.0 0.0 ellipse
+1364 286 0.0 0.0 ellipse
+1365 733 0.0 0.0 ellipse
+1366 2159 0.0 0.0 ellipse
+1367 159 0.0 0.0 ellipse
+1368 936 0.0 0.0 ellipse
+1369 2170 0.0 0.0 ellipse
+1370 73 0.0 0.0 ellipse
+1371 122 0.0 0.0 ellipse
+1372 1426 0.0 0.0 ellipse
+1373 621 0.0 0.0 ellipse
+1374 996 0.0 0.0 ellipse
+1375 971 0.0 0.0 ellipse
+1376 560 0.0 0.0 ellipse
+1377 868 0.0 0.0 ellipse
+1378 338 0.0 0.0 ellipse
+1379 2470 0.0 0.0 ellipse
+1380 740 0.0 0.0 ellipse
+1381 2660 0.0 0.0 ellipse
+1382 2228 0.0 0.0 ellipse
+1383 1066 0.0 0.0 ellipse
+1384 2071 0.0 0.0 ellipse
+1385 2671 0.0 0.0 ellipse
+1386 1547 0.0 0.0 ellipse
+1387 771 0.0 0.0 ellipse
+1388 794 0.0 0.0 ellipse
+1389 2121 0.0 0.0 ellipse
+1390 1666 0.0 0.0 ellipse
+1391 933 0.0 0.0 ellipse
+1392 99 0.0 0.0 ellipse
+1393 2238 0.0 0.0 ellipse
+1394 1000 0.0 0.0 ellipse
+1395 2867 0.0 0.0 ellipse
+1396 1651 0.0 0.0 ellipse
+1397 1409 0.0 0.0 ellipse
+1398 2744 0.0 0.0 ellipse
+1399 611 0.0 0.0 ellipse
+1400 2535 0.0 0.0 ellipse
+1401 797 0.0 0.0 ellipse
+1402 1330 0.0 0.0 ellipse
+1403 700 0.0 0.0 ellipse
+1404 2353 0.0 0.0 ellipse
+1405 1209 0.0 0.0 ellipse
+1406 272 0.0 0.0 ellipse
+1407 2558 0.0 0.0 ellipse
+1408 1608 0.0 0.0 ellipse
+1409 1770 0.0 0.0 ellipse
+1410 361 0.0 0.0 ellipse
+1411 698 0.0 0.0 ellipse
+1412 2302 0.0 0.0 ellipse
+1413 70 0.0 0.0 ellipse
+1414 2365 0.0 0.0 ellipse
+1415 2707 0.0 0.0 ellipse
+1416 331 0.0 0.0 ellipse
+1417 1353 0.0 0.0 ellipse
+1418 425 0.0 0.0 ellipse
+1419 2079 0.0 0.0 ellipse
+1420 1976 0.0 0.0 ellipse
+1421 157 0.0 0.0 ellipse
+1422 391 0.0 0.0 ellipse
+1423 429 0.0 0.0 ellipse
+1424 2979 0.0 0.0 ellipse
+1425 1077 0.0 0.0 ellipse
+1426 1530 0.0 0.0 ellipse
+1427 1004 0.0 0.0 ellipse
+1428 956 0.0 0.0 ellipse
+1429 257 0.0 0.0 ellipse
+1430 1299 0.0 0.0 ellipse
+1431 2160 0.0 0.0 ellipse
+1432 421 0.0 0.0 ellipse
+1433 2607 0.0 0.0 ellipse
+1434 1733 0.0 0.0 ellipse
+1435 2108 0.0 0.0 ellipse
+1436 944 0.0 0.0 ellipse
+1437 2282 0.0 0.0 ellipse
+1438 2933 0.0 0.0 ellipse
+1439 940 0.0 0.0 ellipse
+1440 2603 0.0 0.0 ellipse
+1441 1483 0.0 0.0 ellipse
+1442 1528 0.0 0.0 ellipse
+1443 2673 0.0 0.0 ellipse
+1444 2676 0.0 0.0 ellipse
+1445 770 0.0 0.0 ellipse
+1446 648 0.0 0.0 ellipse
+1447 2829 0.0 0.0 ellipse
+1448 64 0.0 0.0 ellipse
+1449 388 0.0 0.0 ellipse
+1450 1945 0.0 0.0 ellipse
+1451 1136 0.0 0.0 ellipse
+1452 632 0.0 0.0 ellipse
+1453 2773 0.0 0.0 ellipse
+1454 1259 0.0 0.0 ellipse
+1455 859 0.0 0.0 ellipse
+1456 62 0.0 0.0 ellipse
+1457 154 0.0 0.0 ellipse
+1458 351 0.0 0.0 ellipse
+1459 1110 0.0 0.0 ellipse
+1460 443 0.0 0.0 ellipse
+1461 448 0.0 0.0 ellipse
+1462 1736 0.0 0.0 ellipse
+1463 2279 0.0 0.0 ellipse
+1464 1845 0.0 0.0 ellipse
+1465 1954 0.0 0.0 ellipse
+1466 2 0.0 0.0 ellipse
+1467 9 0.0 0.0 ellipse
+1468 31 0.0 0.0 ellipse
+1469 386 0.0 0.0 ellipse
+1470 1588 0.0 0.0 ellipse
+1471 709 0.0 0.0 ellipse
+1472 2969 0.0 0.0 ellipse
+1473 2219 0.0 0.0 ellipse
+1474 2133 0.0 0.0 ellipse
+1475 2536 0.0 0.0 ellipse
+1476 2937 0.0 0.0 ellipse
+1477 1096 0.0 0.0 ellipse
+1478 2292 0.0 0.0 ellipse
+1479 854 0.0 0.0 ellipse
+1480 2463 0.0 0.0 ellipse
+1481 1442 0.0 0.0 ellipse
+1482 2239 0.0 0.0 ellipse
+1483 822 0.0 0.0 ellipse
+1484 1272 0.0 0.0 ellipse
+1485 2704 0.0 0.0 ellipse
+1486 1920 0.0 0.0 ellipse
+1487 1973 0.0 0.0 ellipse
+1488 1120 0.0 0.0 ellipse
+1489 726 0.0 0.0 ellipse
+1490 1594 0.0 0.0 ellipse
+1491 1855 0.0 0.0 ellipse
+1492 2031 0.0 0.0 ellipse
+1493 2043 0.0 0.0 ellipse
+1494 2197 0.0 0.0 ellipse
+1495 2402 0.0 0.0 ellipse
+1496 2650 0.0 0.0 ellipse
+1497 2677 0.0 0.0 ellipse
+1498 2847 0.0 0.0 ellipse
+1499 2932 0.0 0.0 ellipse
+1500 2985 0.0 0.0 ellipse
+*edges
+1 2 1.0
+1 260 1.0
+1 350 1.0
+1 762 1.0
+2 1078 1.0
+2 583 1.0
+2 1145 1.0
+2 856 1.0
+3 4 1.0
+3 12 1.0
+3 1216 1.0
+3 433 1.0
+3 14 1.0
+4 185 1.0
+5 6 1.0
+6 641 1.0
+6 111 1.0
+7 8 1.0
+7 67 1.0
+7 1112 1.0
+7 755 1.0
+8 925 1.0
+8 1421 1.0
+8 1224 1.0
+8 1378 1.0
+8 1014 1.0
+9 586 1.0
+9 719 1.0
+10 11 1.0
+11 452 1.0
+11 462 1.0
+11 92 1.0
+12 656 1.0
+13 14 1.0
+13 964 1.0
+14 432 1.0
+14 1272 1.0
+15 16 1.0
+15 631 1.0
+15 18 1.0
+15 1196 1.0
+16 995 1.0
+16 577 1.0
+16 62 1.0
+16 520 1.0
+17 65 1.0
+17 459 1.0
+17 787 1.0
+18 19 1.0
+18 169 1.0
+18 911 1.0
+18 511 1.0
+19 805 1.0
+20 21 1.0
+20 131 1.0
+20 795 1.0
+21 27 1.0
+21 181 1.0
+21 642 1.0
+21 1338 1.0
+21 995 1.0
+22 23 1.0
+22 670 1.0
+22 457 1.0
+22 638 1.0
+22 1031 1.0
+22 482 1.0
+23 228 1.0
+23 331 1.0
+23 642 1.0
+23 691 1.0
+23 974 1.0
+23 681 1.0
+24 25 1.0
+24 271 1.0
+24 326 1.0
+24 242 1.0
+24 285 1.0
+25 615 1.0
+26 548 1.0
+27 28 1.0
+27 698 1.0
+27 1043 1.0
+27 466 1.0
+28 1263 1.0
+29 30 1.0
+29 140 1.0
+29 156 1.0
+30 415 1.0
+31 1014 1.0
+32 1141 1.0
+32 1037 1.0
+33 590 1.0
+33 1002 1.0
+33 183 1.0
+33 385 1.0
+34 497 1.0
+34 677 1.0
+34 1418 1.0
+35 36 1.0
+35 1207 1.0
+35 492 1.0
+35 830 1.0
+35 1312 1.0
+36 237 1.0
+36 154 1.0
+36 647 1.0
+36 1140 1.0
+36 1144 1.0
+37 490 1.0
+37 1093 1.0
+37 1324 1.0
+37 1277 1.0
+37 446 1.0
+38 50 1.0
+38 855 1.0
+38 439 1.0
+38 147 1.0
+38 981 1.0
+39 40 1.0
+39 414 1.0
+39 1166 1.0
+40 86 1.0
+40 498 1.0
+40 1477 1.0
+41 42 1.0
+41 304 1.0
+41 1218 1.0
+42 135 1.0
+42 930 1.0
+42 1329 1.0
+42 1027 1.0
+43 238 1.0
+44 494 1.0
+44 1289 1.0
+44 902 1.0
+44 1019 1.0
+45 687 1.0
+45 212 1.0
+45 1047 1.0
+45 1292 1.0
+45 75 1.0
+45 269 1.0
+46 277 1.0
+46 968 1.0
+47 358 1.0
+47 1484 1.0
+48 49 1.0
+48 1112 1.0
+48 603 1.0
+48 297 1.0
+48 696 1.0
+49 180 1.0
+49 1377 1.0
+50 1286 1.0
+50 600 1.0
+51 759 1.0
+51 333 1.0
+52 869 1.0
+52 1477 1.0
+52 188 1.0
+53 639 1.0
+53 396 1.0
+54 695 1.0
+54 166 1.0
+54 1353 1.0
+54 686 1.0
+55 332 1.0
+55 623 1.0
+55 851 1.0
+56 375 1.0
+56 1127 1.0
+57 58 1.0
+57 1341 1.0
+57 1015 1.0
+57 1396 1.0
+57 838 1.0
+58 997 1.0
+58 283 1.0
+59 463 1.0
+60 61 1.0
+60 594 1.0
+60 1105 1.0
+60 307 1.0
+61 318 1.0
+61 789 1.0
+62 1285 1.0
+62 1151 1.0
+62 1177 1.0
+62 1267 1.0
+63 64 1.0
+63 979 1.0
+64 783 1.0
+64 1442 1.0
+65 921 1.0
+65 644 1.0
+66 273 1.0
+66 1434 1.0
+67 291 1.0
+68 184 1.0
+68 385 1.0
+69 574 1.0
+69 212 1.0
+69 195 1.0
+69 589 1.0
+69 477 1.0
+70 719 1.0
+70 217 1.0
+70 1277 1.0
+70 1140 1.0
+70 1328 1.0
+72 1177 1.0
+72 898 1.0
+72 413 1.0
+73 505 1.0
+73 1001 1.0
+73 1099 1.0
+74 280 1.0
+74 1214 1.0
+74 332 1.0
+74 743 1.0
+75 76 1.0
+75 595 1.0
+75 1201 1.0
+77 218 1.0
+77 915 1.0
+78 262 1.0
+78 1134 1.0
+79 1291 1.0
+79 975 1.0
+80 217 1.0
+80 81 1.0
+81 82 1.0
+81 268 1.0
+81 784 1.0
+82 590 1.0
+82 290 1.0
+82 926 1.0
+83 84 1.0
+83 415 1.0
+84 322 1.0
+84 126 1.0
+84 802 1.0
+86 1362 1.0
+86 602 1.0
+87 669 1.0
+87 699 1.0
+87 1024 1.0
+88 89 1.0
+89 600 1.0
+89 986 1.0
+89 425 1.0
+90 718 1.0
+90 1079 1.0
+91 92 1.0
+91 641 1.0
+91 504 1.0
+91 378 1.0
+93 927 1.0
+93 1322 1.0
+93 456 1.0
+93 909 1.0
+94 1175 1.0
+94 949 1.0
+94 1126 1.0
+95 1387 1.0
+96 97 1.0
+96 1144 1.0
+97 597 1.0
+99 100 1.0
+99 249 1.0
+99 1336 1.0
+99 1013 1.0
+100 437 1.0
+100 1178 1.0
+100 169 1.0
+101 759 1.0
+102 1459 1.0
+103 104 1.0
+103 655 1.0
+103 411 1.0
+104 236 1.0
+104 1016 1.0
+104 428 1.0
+104 814 1.0
+104 1319 1.0
+104 1375 1.0
+105 123 1.0
+105 222 1.0
+106 1182 1.0
+107 1018 1.0
+107 991 1.0
+108 931 1.0
+108 245 1.0
+109 432 1.0
+110 1214 1.0
+110 987 1.0
+111 994 1.0
+111 606 1.0
+112 706 1.0
+112 1329 1.0
+112 553 1.0
+114 427 1.0
+114 1102 1.0
+115 1385 1.0
+116 117 1.0
+116 1011 1.0
+116 267 1.0
+116 170 1.0
+117 1128 1.0
+117 413 1.0
+117 649 1.0
+117 395 1.0
+117 622 1.0
+118 684 1.0
+118 795 1.0
+118 837 1.0
+118 1140 1.0
+119 120 1.0
+119 1206 1.0
+119 629 1.0
+120 1429 1.0
+121 1242 1.0
+121 1045 1.0
+121 587 1.0
+121 824 1.0
+122 1020 1.0
+123 356 1.0
+123 1280 1.0
+123 163 1.0
+124 610 1.0
+124 1337 1.0
+125 126 1.0
+127 128 1.0
+127 1079 1.0
+128 1293 1.0
+128 883 1.0
+128 837 1.0
+129 130 1.0
+129 482 1.0
+129 311 1.0
+129 425 1.0
+129 869 1.0
+130 493 1.0
+130 772 1.0
+130 323 1.0
+130 1007 1.0
+130 268 1.0
+131 506 1.0
+131 297 1.0
+131 799 1.0
+131 1159 1.0
+132 133 1.0
+133 1287 1.0
+134 1278 1.0
+135 136 1.0
+135 311 1.0
+136 843 1.0
+136 740 1.0
+136 407 1.0
+136 799 1.0
+137 774 1.0
+137 989 1.0
+137 263 1.0
+138 139 1.0
+138 755 1.0
+139 586 1.0
+140 141 1.0
+140 874 1.0
+142 162 1.0
+142 326 1.0
+143 144 1.0
+143 509 1.0
+143 339 1.0
+144 242 1.0
+144 404 1.0
+145 361 1.0
+145 324 1.0
+146 554 1.0
+146 1164 1.0
+146 1251 1.0
+147 430 1.0
+148 149 1.0
+148 1381 1.0
+148 1302 1.0
+149 758 1.0
+149 545 1.0
+149 1330 1.0
+149 349 1.0
+150 151 1.0
+150 296 1.0
+150 1044 1.0
+151 1057 1.0
+151 1311 1.0
+152 1065 1.0
+153 618 1.0
+153 1444 1.0
+154 1233 1.0
+154 1061 1.0
+154 1254 1.0
+155 1126 1.0
+155 1213 1.0
+155 497 1.0
+155 1411 1.0
+157 158 1.0
+157 1232 1.0
+157 990 1.0
+158 373 1.0
+158 201 1.0
+158 957 1.0
+158 1142 1.0
+159 745 1.0
+159 1226 1.0
+159 543 1.0
+160 318 1.0
+161 486 1.0
+161 573 1.0
+161 1154 1.0
+162 456 1.0
+162 566 1.0
+162 1407 1.0
+162 367 1.0
+162 1353 1.0
+163 1279 1.0
+163 334 1.0
+165 166 1.0
+165 376 1.0
+165 1399 1.0
+166 406 1.0
+166 996 1.0
+167 168 1.0
+167 779 1.0
+167 176 1.0
+168 779 1.0
+168 492 1.0
+168 953 1.0
+169 787 1.0
+169 194 1.0
+170 994 1.0
+171 172 1.0
+171 1327 1.0
+172 788 1.0
+172 826 1.0
+172 566 1.0
+173 653 1.0
+173 1119 1.0
+174 606 1.0
+174 422 1.0
+174 525 1.0
+175 464 1.0
+176 610 1.0
+176 217 1.0
+176 586 1.0
+176 423 1.0
+177 1410 1.0
+178 179 1.0
+178 1026 1.0
+178 665 1.0
+178 365 1.0
+179 235 1.0
+179 574 1.0
+179 1437 1.0
+180 791 1.0
+180 1059 1.0
+181 1157 1.0
+182 632 1.0
+182 1226 1.0
+182 868 1.0
+182 1272 1.0
+183 560 1.0
+183 1215 1.0
+183 758 1.0
+184 638 1.0
+184 1305 1.0
+184 1394 1.0
+184 625 1.0
+184 1258 1.0
+185 758 1.0
+185 1323 1.0
+186 521 1.0
+186 959 1.0
+187 1157 1.0
+188 287 1.0
+188 1207 1.0
+188 1324 1.0
+189 190 1.0
+189 319 1.0
+189 351 1.0
+190 507 1.0
+190 278 1.0
+190 610 1.0
+190 1266 1.0
+191 344 1.0
+191 302 1.0
+191 870 1.0
+191 1124 1.0
+193 194 1.0
+193 546 1.0
+193 1265 1.0
+193 380 1.0
+194 529 1.0
+194 357 1.0
+194 901 1.0
+194 1268 1.0
+194 911 1.0
+196 514 1.0
+196 729 1.0
+196 732 1.0
+196 345 1.0
+196 346 1.0
+196 1306 1.0
+197 1218 1.0
+197 1469 1.0
+198 922 1.0
+199 200 1.0
+199 1091 1.0
+200 501 1.0
+200 859 1.0
+200 850 1.0
+200 1334 1.0
+201 872 1.0
+201 973 1.0
+202 1233 1.0
+203 410 1.0
+203 781 1.0
+203 1062 1.0
+203 944 1.0
+204 581 1.0
+204 877 1.0
+204 562 1.0
+204 618 1.0
+205 433 1.0
+205 591 1.0
+206 207 1.0
+208 734 1.0
+208 391 1.0
+208 1451 1.0
+209 622 1.0
+209 1005 1.0
+209 918 1.0
+209 1148 1.0
+211 212 1.0
+211 859 1.0
+211 926 1.0
+212 543 1.0
+213 974 1.0
+214 1344 1.0
+214 664 1.0
+215 912 1.0
+215 979 1.0
+215 1417 1.0
+215 1406 1.0
+215 232 1.0
+216 217 1.0
+216 675 1.0
+218 1020 1.0
+219 304 1.0
+219 1090 1.0
+220 1476 1.0
+220 1313 1.0
+221 597 1.0
+222 918 1.0
+222 307 1.0
+224 849 1.0
+224 893 1.0
+225 226 1.0
+225 557 1.0
+225 384 1.0
+226 1004 1.0
+226 599 1.0
+227 294 1.0
+227 415 1.0
+227 874 1.0
+228 625 1.0
+229 848 1.0
+230 1003 1.0
+231 394 1.0
+231 783 1.0
+231 813 1.0
+231 457 1.0
+232 246 1.0
+233 483 1.0
+233 984 1.0
+233 1099 1.0
+233 311 1.0
+233 1479 1.0
+234 984 1.0
+234 290 1.0
+234 1398 1.0
+234 1052 1.0
+234 595 1.0
+237 238 1.0
+237 1158 1.0
+237 1068 1.0
+238 345 1.0
+239 990 1.0
+239 635 1.0
+239 993 1.0
+240 488 1.0
+241 1178 1.0
+241 517 1.0
+241 560 1.0
+243 1176 1.0
+243 946 1.0
+243 294 1.0
+244 1186 1.0
+245 1466 1.0
+245 536 1.0
+246 247 1.0
+246 393 1.0
+247 518 1.0
+248 545 1.0
+248 956 1.0
+248 1095 1.0
+249 722 1.0
+250 585 1.0
+250 266 1.0
+250 675 1.0
+250 758 1.0
+251 1212 1.0
+251 1122 1.0
+252 701 1.0
+252 1033 1.0
+252 303 1.0
+252 1369 1.0
+253 254 1.0
+253 573 1.0
+253 405 1.0
+253 483 1.0
+254 779 1.0
+255 256 1.0
+255 1110 1.0
+256 673 1.0
+256 668 1.0
+256 397 1.0
+256 359 1.0
+257 258 1.0
+257 1124 1.0
+258 640 1.0
+258 364 1.0
+259 260 1.0
+259 537 1.0
+259 361 1.0
+260 651 1.0
+260 854 1.0
+261 262 1.0
+261 602 1.0
+262 333 1.0
+262 794 1.0
+262 393 1.0
+262 465 1.0
+263 474 1.0
+264 486 1.0
+264 904 1.0
+264 548 1.0
+264 738 1.0
+266 267 1.0
+267 360 1.0
+268 1403 1.0
+269 414 1.0
+269 972 1.0
+269 1119 1.0
+269 394 1.0
+269 1206 1.0
+269 1436 1.0
+270 885 1.0
+271 1367 1.0
+271 539 1.0
+272 1082 1.0
+273 1333 1.0
+273 1383 1.0
+274 411 1.0
+275 1303 1.0
+275 575 1.0
+276 357 1.0
+277 847 1.0
+277 1386 1.0
+278 1326 1.0
+278 1453 1.0
+278 281 1.0
+279 352 1.0
+279 437 1.0
+279 1238 1.0
+280 869 1.0
+280 1279 1.0
+281 828 1.0
+282 601 1.0
+282 367 1.0
+282 1392 1.0
+283 541 1.0
+283 925 1.0
+283 1456 1.0
+283 410 1.0
+284 1148 1.0
+285 286 1.0
+285 559 1.0
+285 1240 1.0
+285 472 1.0
+286 809 1.0
+287 857 1.0
+287 611 1.0
+287 879 1.0
+288 839 1.0
+289 290 1.0
+289 924 1.0
+290 1072 1.0
+290 794 1.0
+290 1424 1.0
+291 295 1.0
+291 461 1.0
+292 293 1.0
+292 360 1.0
+292 674 1.0
+292 601 1.0
+293 589 1.0
+294 349 1.0
+295 296 1.0
+295 648 1.0
+295 1255 1.0
+295 1125 1.0
+296 621 1.0
+296 1415 1.0
+296 503 1.0
+297 298 1.0
+297 418 1.0
+297 318 1.0
+297 1175 1.0
+297 1188 1.0
+298 411 1.0
+298 517 1.0
+299 655 1.0
+299 362 1.0
+299 353 1.0
+300 536 1.0
+300 1467 1.0
+301 495 1.0
+303 390 1.0
+303 840 1.0
+303 876 1.0
+303 1390 1.0
+303 639 1.0
+304 305 1.0
+304 375 1.0
+304 747 1.0
+305 1142 1.0
+305 395 1.0
+305 404 1.0
+305 1490 1.0
+306 573 1.0
+308 752 1.0
+308 939 1.0
+308 1110 1.0
+309 1028 1.0
+309 1341 1.0
+309 1324 1.0
+309 1488 1.0
+310 315 1.0
+311 312 1.0
+312 582 1.0
+313 1155 1.0
+313 389 1.0
+315 957 1.0
+316 508 1.0
+316 1352 1.0
+317 640 1.0
+318 764 1.0
+319 463 1.0
+319 718 1.0
+319 1063 1.0
+320 321 1.0
+320 1326 1.0
+320 826 1.0
+321 428 1.0
+321 459 1.0
+321 1331 1.0
+322 570 1.0
+322 960 1.0
+322 819 1.0
+322 759 1.0
+322 1335 1.0
+323 919 1.0
+323 1027 1.0
+324 1134 1.0
+324 1196 1.0
+325 326 1.0
+325 761 1.0
+326 355 1.0
+326 715 1.0
+327 622 1.0
+327 888 1.0
+327 1313 1.0
+327 444 1.0
+328 914 1.0
+328 1383 1.0
+328 600 1.0
+329 330 1.0
+329 407 1.0
+329 1251 1.0
+330 1223 1.0
+332 1358 1.0
+332 1097 1.0
+332 487 1.0
+332 533 1.0
+333 356 1.0
+333 1032 1.0
+333 1480 1.0
+334 960 1.0
+336 573 1.0
+336 908 1.0
+336 1483 1.0
+337 631 1.0
+337 1219 1.0
+337 1160 1.0
+338 339 1.0
+338 611 1.0
+338 648 1.0
+340 341 1.0
+340 1217 1.0
+340 1261 1.0
+340 1056 1.0
+341 649 1.0
+341 362 1.0
+341 1328 1.0
+342 473 1.0
+345 664 1.0
+345 789 1.0
+345 1500 1.0
+346 913 1.0
+347 348 1.0
+347 703 1.0
+347 616 1.0
+348 724 1.0
+348 669 1.0
+348 712 1.0
+349 350 1.0
+349 355 1.0
+349 501 1.0
+351 1005 1.0
+351 740 1.0
+351 1194 1.0
+351 1269 1.0
+352 353 1.0
+352 707 1.0
+352 414 1.0
+352 839 1.0
+353 762 1.0
+355 771 1.0
+355 1276 1.0
+355 904 1.0
+356 637 1.0
+356 442 1.0
+357 670 1.0
+358 1222 1.0
+358 1315 1.0
+359 854 1.0
+359 526 1.0
+361 749 1.0
+361 1346 1.0
+361 1293 1.0
+361 1441 1.0
+362 363 1.0
+362 492 1.0
+362 843 1.0
+362 863 1.0
+363 863 1.0
+363 521 1.0
+363 423 1.0
+364 546 1.0
+364 1003 1.0
+364 1384 1.0
+365 900 1.0
+365 1165 1.0
+365 531 1.0
+366 367 1.0
+366 940 1.0
+367 1359 1.0
+368 1174 1.0
+368 956 1.0
+368 1016 1.0
+369 814 1.0
+369 447 1.0
+370 560 1.0
+370 1143 1.0
+370 1296 1.0
+371 1041 1.0
+371 715 1.0
+372 1306 1.0
+373 576 1.0
+374 734 1.0
+375 422 1.0
+375 1470 1.0
+376 656 1.0
+376 1086 1.0
+377 378 1.0
+377 472 1.0
+377 1192 1.0
+378 898 1.0
+378 555 1.0
+378 849 1.0
+379 647 1.0
+379 1014 1.0
+379 1229 1.0
+380 381 1.0
+380 1063 1.0
+380 514 1.0
+381 533 1.0
+381 1162 1.0
+382 1323 1.0
+383 384 1.0
+383 897 1.0
+384 679 1.0
+384 740 1.0
+384 1049 1.0
+385 555 1.0
+385 565 1.0
+385 963 1.0
+386 509 1.0
+387 388 1.0
+387 467 1.0
+387 1464 1.0
+387 1491 1.0
+388 894 1.0
+388 510 1.0
+388 793 1.0
+389 923 1.0
+390 734 1.0
+390 904 1.0
+390 630 1.0
+391 1174 1.0
+392 1161 1.0
+394 395 1.0
+394 462 1.0
+395 564 1.0
+395 460 1.0
+395 546 1.0
+396 471 1.0
+396 924 1.0
+398 988 1.0
+398 684 1.0
+398 954 1.0
+398 1131 1.0
+399 589 1.0
+399 470 1.0
+400 1144 1.0
+402 1150 1.0
+402 754 1.0
+403 915 1.0
+403 442 1.0
+404 1012 1.0
+406 407 1.0
+406 873 1.0
+406 619 1.0
+408 409 1.0
+408 496 1.0
+409 934 1.0
+409 938 1.0
+411 443 1.0
+411 746 1.0
+412 591 1.0
+412 1098 1.0
+413 483 1.0
+414 415 1.0
+414 931 1.0
+414 960 1.0
+415 818 1.0
+415 676 1.0
+416 816 1.0
+416 1174 1.0
+417 471 1.0
+417 1225 1.0
+417 1037 1.0
+418 919 1.0
+418 1095 1.0
+419 1268 1.0
+420 991 1.0
+420 693 1.0
+421 472 1.0
+422 1435 1.0
+423 424 1.0
+424 821 1.0
+424 1141 1.0
+425 734 1.0
+425 1163 1.0
+426 514 1.0
+426 544 1.0
+426 548 1.0
+426 1146 1.0
+428 429 1.0
+428 958 1.0
+428 845 1.0
+429 758 1.0
+429 712 1.0
+429 603 1.0
+431 508 1.0
+431 443 1.0
+431 1289 1.0
+431 945 1.0
+432 748 1.0
+432 1090 1.0
+432 1434 1.0
+433 506 1.0
+434 435 1.0
+434 1113 1.0
+434 1019 1.0
+436 490 1.0
+437 438 1.0
+437 1040 1.0
+437 1417 1.0
+437 1008 1.0
+438 1202 1.0
+439 440 1.0
+440 678 1.0
+441 442 1.0
+442 852 1.0
+442 644 1.0
+442 1088 1.0
+443 700 1.0
+444 586 1.0
+444 1326 1.0
+444 1322 1.0
+446 447 1.0
+446 769 1.0
+447 466 1.0
+447 1276 1.0
+447 764 1.0
+448 535 1.0
+448 1245 1.0
+448 495 1.0
+448 467 1.0
+449 474 1.0
+449 1356 1.0
+450 1016 1.0
+452 498 1.0
+453 1220 1.0
+453 659 1.0
+453 1058 1.0
+454 455 1.0
+454 887 1.0
+454 975 1.0
+455 1098 1.0
+455 1196 1.0
+455 1317 1.0
+455 534 1.0
+455 927 1.0
+455 931 1.0
+457 1250 1.0
+458 459 1.0
+458 483 1.0
+458 1010 1.0
+459 943 1.0
+460 665 1.0
+461 512 1.0
+462 799 1.0
+462 1219 1.0
+463 1208 1.0
+463 1340 1.0
+464 1304 1.0
+466 775 1.0
+466 1336 1.0
+466 812 1.0
+466 1439 1.0
+466 1386 1.0
+468 894 1.0
+469 1123 1.0
+469 1092 1.0
+469 1242 1.0
+470 1048 1.0
+470 885 1.0
+471 524 1.0
+471 763 1.0
+471 850 1.0
+471 1418 1.0
+471 479 1.0
+472 1282 1.0
+473 965 1.0
+473 1185 1.0
+474 1271 1.0
+474 1018 1.0
+475 476 1.0
+475 1206 1.0
+475 766 1.0
+475 1041 1.0
+476 622 1.0
+477 478 1.0
+477 1359 1.0
+478 903 1.0
+479 1006 1.0
+480 1089 1.0
+480 876 1.0
+481 828 1.0
+481 664 1.0
+482 899 1.0
+482 1401 1.0
+482 758 1.0
+483 1392 1.0
+483 681 1.0
+483 794 1.0
+483 584 1.0
+484 485 1.0
+486 973 1.0
+486 821 1.0
+486 837 1.0
+487 820 1.0
+488 665 1.0
+488 1016 1.0
+489 556 1.0
+489 1111 1.0
+490 1392 1.0
+491 1011 1.0
+491 1303 1.0
+491 1054 1.0
+493 796 1.0
+494 495 1.0
+494 657 1.0
+495 1048 1.0
+498 773 1.0
+498 522 1.0
+498 1481 1.0
+499 819 1.0
+499 878 1.0
+500 501 1.0
+501 949 1.0
+501 704 1.0
+501 892 1.0
+501 596 1.0
+502 503 1.0
+502 671 1.0
+502 597 1.0
+503 675 1.0
+503 737 1.0
+504 505 1.0
+504 608 1.0
+504 658 1.0
+504 579 1.0
+504 1110 1.0
+505 644 1.0
+505 1370 1.0
+505 887 1.0
+506 1301 1.0
+506 1130 1.0
+509 1171 1.0
+509 1447 1.0
+510 511 1.0
+511 1034 1.0
+513 985 1.0
+513 666 1.0
+514 868 1.0
+514 1140 1.0
+515 1195 1.0
+515 793 1.0
+517 1059 1.0
+517 844 1.0
+517 743 1.0
+517 1138 1.0
+517 1322 1.0
+518 1399 1.0
+518 1051 1.0
+518 1470 1.0
+518 680 1.0
+519 520 1.0
+519 782 1.0
+519 1128 1.0
+521 596 1.0
+521 769 1.0
+522 523 1.0
+522 866 1.0
+522 1401 1.0
+523 1038 1.0
+524 1191 1.0
+525 593 1.0
+526 527 1.0
+526 1159 1.0
+526 658 1.0
+526 963 1.0
+527 1070 1.0
+527 1468 1.0
+529 1029 1.0
+529 765 1.0
+529 1403 1.0
+530 711 1.0
+530 683 1.0
+531 532 1.0
+531 1236 1.0
+531 535 1.0
+531 1159 1.0
+532 1044 1.0
+532 1318 1.0
+534 536 1.0
+534 1201 1.0
+534 1295 1.0
+534 1285 1.0
+534 1309 1.0
+535 1227 1.0
+536 722 1.0
+537 973 1.0
+537 1136 1.0
+537 1342 1.0
+538 588 1.0
+538 1288 1.0
+538 598 1.0
+538 973 1.0
+539 540 1.0
+539 1192 1.0
+540 1067 1.0
+540 816 1.0
+541 1413 1.0
+542 543 1.0
+543 1277 1.0
+546 547 1.0
+546 1424 1.0
+546 1109 1.0
+549 550 1.0
+549 1312 1.0
+549 1177 1.0
+549 653 1.0
+550 740 1.0
+551 619 1.0
+551 565 1.0
+551 1301 1.0
+552 689 1.0
+552 627 1.0
+552 947 1.0
+552 678 1.0
+553 724 1.0
+554 555 1.0
+554 1120 1.0
+555 649 1.0
+555 1087 1.0
+557 758 1.0
+557 589 1.0
+558 585 1.0
+559 936 1.0
+559 1393 1.0
+559 580 1.0
+561 562 1.0
+561 1050 1.0
+561 1042 1.0
+563 1272 1.0
+563 876 1.0
+564 1197 1.0
+564 973 1.0
+564 940 1.0
+564 728 1.0
+566 757 1.0
+566 1096 1.0
+566 653 1.0
+566 896 1.0
+567 1379 1.0
+567 1454 1.0
+567 1185 1.0
+568 1057 1.0
+568 1033 1.0
+569 570 1.0
+571 930 1.0
+572 1335 1.0
+572 963 1.0
+573 601 1.0
+573 719 1.0
+573 788 1.0
+574 1121 1.0
+575 576 1.0
+575 610 1.0
+578 799 1.0
+578 668 1.0
+578 1408 1.0
+580 856 1.0
+581 748 1.0
+582 1022 1.0
+583 672 1.0
+584 1114 1.0
+586 587 1.0
+586 1062 1.0
+587 1068 1.0
+587 1346 1.0
+588 678 1.0
+588 1299 1.0
+589 648 1.0
+590 778 1.0
+592 1430 1.0
+592 1442 1.0
+593 657 1.0
+596 873 1.0
+596 882 1.0
+599 667 1.0
+599 902 1.0
+599 1403 1.0
+602 811 1.0
+603 874 1.0
+603 1188 1.0
+604 605 1.0
+604 987 1.0
+604 1139 1.0
+605 1075 1.0
+605 899 1.0
+605 1467 1.0
+605 1247 1.0
+605 961 1.0
+605 675 1.0
+606 627 1.0
+607 1465 1.0
+607 1301 1.0
+608 1423 1.0
+609 784 1.0
+609 986 1.0
+611 612 1.0
+611 1454 1.0
+611 900 1.0
+612 689 1.0
+613 689 1.0
+614 1145 1.0
+614 945 1.0
+615 616 1.0
+615 1238 1.0
+616 1030 1.0
+616 1238 1.0
+616 912 1.0
+619 1136 1.0
+619 929 1.0
+619 1306 1.0
+620 1408 1.0
+620 694 1.0
+621 864 1.0
+622 1232 1.0
+622 1218 1.0
+624 977 1.0
+625 774 1.0
+625 1076 1.0
+626 1449 1.0
+626 1233 1.0
+626 1488 1.0
+628 629 1.0
+628 881 1.0
+628 1361 1.0
+629 1160 1.0
+629 1136 1.0
+629 839 1.0
+629 1197 1.0
+630 754 1.0
+631 632 1.0
+632 1187 1.0
+632 1182 1.0
+633 899 1.0
+634 774 1.0
+634 1309 1.0
+635 636 1.0
+635 1268 1.0
+635 1376 1.0
+638 956 1.0
+638 1012 1.0
+638 1204 1.0
+638 1044 1.0
+638 974 1.0
+638 1348 1.0
+638 1227 1.0
+639 1032 1.0
+639 1115 1.0
+640 641 1.0
+640 1134 1.0
+642 926 1.0
+642 1225 1.0
+643 644 1.0
+643 1052 1.0
+643 1485 1.0
+644 1224 1.0
+644 1337 1.0
+644 714 1.0
+646 891 1.0
+648 843 1.0
+648 1309 1.0
+649 1010 1.0
+650 987 1.0
+650 931 1.0
+651 1259 1.0
+651 1106 1.0
+653 836 1.0
+654 1024 1.0
+654 967 1.0
+655 831 1.0
+655 992 1.0
+657 658 1.0
+657 1281 1.0
+657 1087 1.0
+657 1084 1.0
+657 1432 1.0
+659 1372 1.0
+659 1472 1.0
+661 704 1.0
+661 1200 1.0
+661 888 1.0
+661 810 1.0
+662 710 1.0
+662 1119 1.0
+662 1468 1.0
+664 671 1.0
+664 1284 1.0
+664 814 1.0
+665 1030 1.0
+666 1104 1.0
+666 774 1.0
+666 1274 1.0
+667 668 1.0
+668 1302 1.0
+668 1116 1.0
+669 813 1.0
+669 923 1.0
+671 672 1.0
+671 798 1.0
+671 734 1.0
+671 1201 1.0
+671 708 1.0
+673 727 1.0
+673 1469 1.0
+673 899 1.0
+673 1397 1.0
+674 1233 1.0
+675 712 1.0
+676 686 1.0
+677 818 1.0
+677 902 1.0
+678 1430 1.0
+680 888 1.0
+682 683 1.0
+682 761 1.0
+685 780 1.0
+686 832 1.0
+687 1189 1.0
+687 987 1.0
+687 1326 1.0
+688 689 1.0
+688 1225 1.0
+688 1406 1.0
+688 878 1.0
+689 1109 1.0
+690 1132 1.0
+691 1073 1.0
+692 693 1.0
+692 920 1.0
+693 1493 1.0
+693 1118 1.0
+695 696 1.0
+696 1045 1.0
+696 1259 1.0
+697 698 1.0
+697 738 1.0
+699 1487 1.0
+699 928 1.0
+701 1442 1.0
+702 1102 1.0
+702 1428 1.0
+702 963 1.0
+703 922 1.0
+703 1416 1.0
+704 1206 1.0
+704 1167 1.0
+705 1068 1.0
+705 883 1.0
+708 913 1.0
+708 1405 1.0
+708 869 1.0
+709 710 1.0
+709 1092 1.0
+709 1102 1.0
+711 712 1.0
+711 939 1.0
+711 1395 1.0
+713 714 1.0
+713 1034 1.0
+714 1257 1.0
+714 1381 1.0
+714 1034 1.0
+714 1084 1.0
+715 923 1.0
+717 790 1.0
+717 963 1.0
+719 821 1.0
+721 1319 1.0
+722 1212 1.0
+722 1064 1.0
+722 1374 1.0
+723 938 1.0
+724 847 1.0
+725 726 1.0
+725 829 1.0
+727 728 1.0
+727 1201 1.0
+727 1225 1.0
+728 982 1.0
+730 731 1.0
+730 1358 1.0
+731 1059 1.0
+731 885 1.0
+735 736 1.0
+736 875 1.0
+736 830 1.0
+737 1073 1.0
+739 894 1.0
+740 741 1.0
+740 1329 1.0
+741 871 1.0
+742 743 1.0
+742 1156 1.0
+742 1295 1.0
+744 745 1.0
+744 998 1.0
+744 1074 1.0
+744 1311 1.0
+744 1290 1.0
+745 1034 1.0
+745 1405 1.0
+746 747 1.0
+746 993 1.0
+746 1459 1.0
+746 1248 1.0
+747 841 1.0
+747 1268 1.0
+748 749 1.0
+748 1141 1.0
+749 1063 1.0
+749 1248 1.0
+750 751 1.0
+750 810 1.0
+750 1283 1.0
+751 825 1.0
+751 1267 1.0
+752 862 1.0
+752 978 1.0
+754 834 1.0
+755 948 1.0
+757 1299 1.0
+757 1026 1.0
+758 1365 1.0
+759 1031 1.0
+760 797 1.0
+761 1462 1.0
+762 763 1.0
+763 868 1.0
+763 1035 1.0
+764 1091 1.0
+764 1266 1.0
+765 801 1.0
+765 783 1.0
+766 860 1.0
+767 1426 1.0
+769 1239 1.0
+770 1172 1.0
+772 1263 1.0
+773 774 1.0
+773 1480 1.0
+778 1395 1.0
+778 1413 1.0
+779 988 1.0
+780 846 1.0
+780 828 1.0
+781 1265 1.0
+781 1395 1.0
+783 1374 1.0
+783 1134 1.0
+784 785 1.0
+785 1196 1.0
+785 1288 1.0
+785 1167 1.0
+785 1456 1.0
+786 978 1.0
+786 818 1.0
+787 818 1.0
+787 804 1.0
+787 1053 1.0
+787 1422 1.0
+788 1309 1.0
+788 1082 1.0
+789 1141 1.0
+790 915 1.0
+792 1372 1.0
+792 1236 1.0
+793 794 1.0
+793 807 1.0
+793 1279 1.0
+793 1464 1.0
+794 939 1.0
+794 914 1.0
+795 1273 1.0
+795 911 1.0
+796 1147 1.0
+796 830 1.0
+797 1196 1.0
+797 1318 1.0
+797 1022 1.0
+798 1382 1.0
+798 1072 1.0
+798 866 1.0
+798 1342 1.0
+799 1036 1.0
+800 801 1.0
+800 802 1.0
+800 1249 1.0
+802 803 1.0
+802 1232 1.0
+802 997 1.0
+805 1134 1.0
+806 807 1.0
+806 1197 1.0
+806 936 1.0
+807 893 1.0
+808 809 1.0
+809 943 1.0
+809 1265 1.0
+810 811 1.0
+811 825 1.0
+811 1223 1.0
+812 1337 1.0
+813 959 1.0
+813 1488 1.0
+814 815 1.0
+815 1210 1.0
+816 1034 1.0
+817 1081 1.0
+817 1270 1.0
+820 1237 1.0
+821 895 1.0
+822 890 1.0
+822 991 1.0
+823 966 1.0
+823 1458 1.0
+824 825 1.0
+824 888 1.0
+825 870 1.0
+826 827 1.0
+826 1431 1.0
+827 1240 1.0
+827 1286 1.0
+828 895 1.0
+828 964 1.0
+829 830 1.0
+829 1033 1.0
+829 1416 1.0
+830 1039 1.0
+832 1077 1.0
+832 1405 1.0
+833 1072 1.0
+833 1103 1.0
+834 870 1.0
+834 1307 1.0
+835 977 1.0
+836 999 1.0
+836 921 1.0
+837 1264 1.0
+839 1254 1.0
+839 1241 1.0
+840 954 1.0
+841 842 1.0
+842 1052 1.0
+842 1120 1.0
+843 844 1.0
+845 1343 1.0
+845 1013 1.0
+846 1273 1.0
+846 1071 1.0
+847 1145 1.0
+848 1015 1.0
+848 1286 1.0
+848 1117 1.0
+849 951 1.0
+850 1123 1.0
+850 1048 1.0
+851 852 1.0
+851 1233 1.0
+853 925 1.0
+853 1413 1.0
+853 1370 1.0
+854 1419 1.0
+856 857 1.0
+856 1051 1.0
+856 858 1.0
+856 922 1.0
+858 1058 1.0
+858 1189 1.0
+858 1400 1.0
+859 1130 1.0
+860 861 1.0
+860 961 1.0
+861 1313 1.0
+862 959 1.0
+864 1151 1.0
+865 1412 1.0
+866 867 1.0
+866 1013 1.0
+866 1066 1.0
+867 967 1.0
+868 1034 1.0
+868 1440 1.0
+869 901 1.0
+869 1278 1.0
+871 1129 1.0
+873 1341 1.0
+874 1268 1.0
+874 1487 1.0
+875 929 1.0
+875 1287 1.0
+877 1011 1.0
+877 1390 1.0
+881 1346 1.0
+882 883 1.0
+882 1462 1.0
+884 885 1.0
+886 887 1.0
+886 1405 1.0
+887 1358 1.0
+887 1363 1.0
+889 890 1.0
+889 1343 1.0
+890 904 1.0
+890 1070 1.0
+891 1098 1.0
+893 973 1.0
+894 895 1.0
+895 1146 1.0
+897 1274 1.0
+898 1165 1.0
+898 1415 1.0
+899 1317 1.0
+899 1421 1.0
+900 1264 1.0
+901 1133 1.0
+901 1122 1.0
+903 1226 1.0
+903 1037 1.0
+904 905 1.0
+904 1260 1.0
+905 1375 1.0
+906 1368 1.0
+908 1049 1.0
+908 1311 1.0
+909 910 1.0
+909 1226 1.0
+910 1022 1.0
+910 1255 1.0
+910 1071 1.0
+910 1343 1.0
+912 1165 1.0
+912 1057 1.0
+913 1020 1.0
+913 1467 1.0
+915 1302 1.0
+919 1132 1.0
+921 922 1.0
+921 1354 1.0
+922 1008 1.0
+923 1457 1.0
+923 1466 1.0
+926 1128 1.0
+926 1321 1.0
+927 1026 1.0
+931 1163 1.0
+932 933 1.0
+932 949 1.0
+935 1117 1.0
+935 1286 1.0
+935 1483 1.0
+935 1004 1.0
+936 1268 1.0
+937 1126 1.0
+938 1462 1.0
+939 986 1.0
+941 1334 1.0
+942 1249 1.0
+942 1412 1.0
+946 966 1.0
+947 1061 1.0
+950 1451 1.0
+951 1376 1.0
+953 996 1.0
+953 1471 1.0
+956 1104 1.0
+957 1229 1.0
+957 1257 1.0
+957 1364 1.0
+958 1254 1.0
+958 1178 1.0
+960 1121 1.0
+961 962 1.0
+961 1056 1.0
+962 1321 1.0
+967 983 1.0
+968 1459 1.0
+968 1441 1.0
+969 1223 1.0
+970 1483 1.0
+972 1321 1.0
+972 979 1.0
+973 974 1.0
+975 976 1.0
+975 1047 1.0
+976 1274 1.0
+976 1211 1.0
+978 990 1.0
+980 981 1.0
+980 1100 1.0
+981 1041 1.0
+983 1411 1.0
+985 986 1.0
+985 1369 1.0
+985 1484 1.0
+986 1170 1.0
+987 1432 1.0
+989 1153 1.0
+989 1125 1.0
+989 1039 1.0
+990 1420 1.0
+990 1357 1.0
+990 1315 1.0
+992 1017 1.0
+995 996 1.0
+995 1167 1.0
+997 998 1.0
+997 1094 1.0
+997 1464 1.0
+1000 1431 1.0
+1002 1062 1.0
+1002 1136 1.0
+1003 1004 1.0
+1006 1181 1.0
+1006 1196 1.0
+1007 1008 1.0
+1008 1428 1.0
+1009 1010 1.0
+1009 1093 1.0
+1011 1087 1.0
+1011 1330 1.0
+1016 1110 1.0
+1016 1077 1.0
+1016 1195 1.0
+1017 1052 1.0
+1019 1143 1.0
+1019 1380 1.0
+1022 1489 1.0
+1024 1049 1.0
+1025 1089 1.0
+1025 1263 1.0
+1026 1189 1.0
+1028 1460 1.0
+1029 1194 1.0
+1032 1212 1.0
+1038 1230 1.0
+1043 1451 1.0
+1044 1111 1.0
+1045 1333 1.0
+1046 1290 1.0
+1047 1121 1.0
+1047 1499 1.0
+1048 1176 1.0
+1048 1374 1.0
+1050 1251 1.0
+1052 1341 1.0
+1054 1205 1.0
+1054 1372 1.0
+1057 1085 1.0
+1058 1426 1.0
+1060 1061 1.0
+1061 1269 1.0
+1065 1356 1.0
+1067 1073 1.0
+1072 1127 1.0
+1076 1077 1.0
+1077 1278 1.0
+1079 1480 1.0
+1083 1351 1.0
+1086 1156 1.0
+1087 1194 1.0
+1088 1246 1.0
+1088 1137 1.0
+1089 1140 1.0
+1089 1130 1.0
+1090 1322 1.0
+1091 1311 1.0
+1091 1291 1.0
+1092 1315 1.0
+1093 1094 1.0
+1096 1481 1.0
+1097 1325 1.0
+1098 1136 1.0
+1100 1101 1.0
+1102 1237 1.0
+1103 1365 1.0
+1105 1217 1.0
+1109 1436 1.0
+1111 1237 1.0
+1114 1385 1.0
+1116 1371 1.0
+1116 1496 1.0
+1117 1240 1.0
+1118 1344 1.0
+1119 1415 1.0
+1122 1389 1.0
+1123 1309 1.0
+1128 1193 1.0
+1128 1268 1.0
+1129 1137 1.0
+1131 1201 1.0
+1131 1387 1.0
+1131 1275 1.0
+1132 1172 1.0
+1132 1360 1.0
+1133 1164 1.0
+1135 1332 1.0
+1135 1295 1.0
+1135 1477 1.0
+1140 1481 1.0
+1143 1383 1.0
+1145 1269 1.0
+1146 1279 1.0
+1147 1450 1.0
+1152 1215 1.0
+1155 1331 1.0
+1156 1213 1.0
+1156 1225 1.0
+1156 1425 1.0
+1158 1446 1.0
+1164 1193 1.0
+1167 1475 1.0
+1170 1171 1.0
+1175 1337 1.0
+1179 1427 1.0
+1182 1183 1.0
+1184 1198 1.0
+1187 1200 1.0
+1187 1374 1.0
+1189 1190 1.0
+1195 1436 1.0
+1196 1261 1.0
+1196 1358 1.0
+1199 1200 1.0
+1199 1473 1.0
+1201 1438 1.0
+1205 1445 1.0
+1209 1210 1.0
+1217 1491 1.0
+1220 1324 1.0
+1221 1269 1.0
+1222 1327 1.0
+1224 1302 1.0
+1225 1226 1.0
+1227 1331 1.0
+1236 1414 1.0
+1237 1238 1.0
+1239 1252 1.0
+1239 1328 1.0
+1245 1246 1.0
+1246 1399 1.0
+1247 1420 1.0
+1249 1463 1.0
+1250 1251 1.0
+1251 1276 1.0
+1256 1359 1.0
+1263 1267 1.0
+1263 1313 1.0
+1264 1303 1.0
+1273 1285 1.0
+1273 1376 1.0
+1278 1366 1.0
+1283 1435 1.0
+1283 1408 1.0
+1283 1361 1.0
+1284 1315 1.0
+1285 1344 1.0
+1287 1401 1.0
+1294 1434 1.0
+1297 1359 1.0
+1302 1430 1.0
+1304 1330 1.0
+1322 1335 1.0
+1323 1444 1.0
+1323 1452 1.0
+1326 1345 1.0
+1332 1409 1.0
+1341 1424 1.0
+1342 1348 1.0
+1343 1355 1.0
+1354 1380 1.0
+1375 1376 1.0
+1378 1416 1.0
+1389 1426 1.0
+1392 1478 1.0
+1392 1444 1.0
+1403 1405 1.0
+1410 1451 1.0
+1422 1423 1.0
+1423 1434 1.0
+1438 1499 1.0
+1485 1497 1.0
+1492 1493 1.0
