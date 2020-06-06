@@ -96,7 +96,7 @@ def plot_comparisons_from_file_metrics(file_name, title, filenames, labels, exp_
         #ylabels.append(r'$d_{max}: $' + labels[i])
 
     ax.grid("on", alpha=0.1)
-    ax.set_ylabel("clusterings")
+    ax.set_ylabel("path length")
     ax.set_xlabel("Removal ratio")
     ax.set_title(title)
     if labels:
