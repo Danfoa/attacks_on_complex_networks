@@ -146,3 +146,18 @@ def plot_comparisons_from_file_clustering(file_name, title, filenames, labels, e
     file_name = os.path.join('results', file_name+"_clust_comparisons")
     plt.savefig(file_name)
 
+
+def plot_distribution(net, title, log_scale=False):
+    degrees = net.degree()
+    degrees = np.array([x[1] for x in degrees])
+
+    if log_scale:
+        hist, bins = np.histogram(degrees, bins=10)
+        logbins = np.logspace(np.log10(bins[0]), np.log10(bins[-1]), len(bins))
+        plt.hist(degrees, bins=logbins)
+        plt.yscale('log')
+        plt.xscale('log')
+    else:
+        plt.hist(degrees)
+    plt.title(title)
+    plt.show()
