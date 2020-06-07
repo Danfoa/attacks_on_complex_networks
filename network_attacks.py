@@ -1,13 +1,11 @@
-import sys
 import copy
 import random
+import sys
 
-from tqdm import tqdm
 import networkx as nx
-from networkx.algorithms.shortest_paths.generic import average_shortest_path_length
-
-from scipy.stats import mstats
 import numpy as np
+from scipy.stats import mstats
+from tqdm import tqdm
 
 
 def get_attack_metrics(net):
@@ -83,11 +81,12 @@ def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False, t
 
     steps = int(max_rate / removal_rate)
     if track_net_num is not None:
-        track_net_num = int(steps/track_net_num)
+        track_net_num = int(steps / track_net_num)
         network_tracking = {0: nx.Graph(net)}
     step = 0
-    for ratio_removed in tqdm([removal_rate] * steps, desc="- Incremental_failure", disable=not verbose, file=sys.stdout):
-        step = step+1
+    for ratio_removed in tqdm([removal_rate] * steps, desc="- Incremental_failure", disable=not verbose,
+                              file=sys.stdout):
+        step = step + 1
         # Get list of nodes
         nodes = list(attacked_net.nodes)
         # Randomly select nodes to remove
@@ -96,13 +95,6 @@ def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False, t
         attacked_net.remove_nodes_from(removed_nodes)
 
         metrics = get_attack_metrics(attacked_net)
-
-        # min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
-        # max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
-        #
-        # # Replace 50% percentile with mean value
-        # min_quantiles[1] = np.mean(metrics["shortest_paths"])
-        # max_quantiles[1] = np.mean(metrics["eccentricities"])
 
         min_quantiles = np.zeros(3, dtype=np.float)
         max_quantiles = np.zeros(3, dtype=np.float)
@@ -116,7 +108,6 @@ def incremental_random_failure(net, removal_rate, max_rate=0.5, verbose=False, t
         std = np.std(metrics["eccentricities"], axis=0)
         max_quantiles[2] = max_quantiles[1] + std
         max_quantiles[0] = max_quantiles[1] - std
-
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
@@ -157,13 +148,6 @@ def instantaneous_random_failure(net, removal_rates, verbose=False):
 
         metrics = get_attack_metrics(attacked_net)
 
-        # min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
-        # max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
-        #
-        # # Replace 50% percentile with mean value
-        # min_quantiles[1] = np.mean(metrics["shortest_paths"])
-        # max_quantiles[1] = np.mean(metrics["eccentricities"])
-
         min_quantiles = np.zeros(3, dtype=np.float)
         max_quantiles = np.zeros(3, dtype=np.float)
 
@@ -176,7 +160,6 @@ def instantaneous_random_failure(net, removal_rates, verbose=False):
         std = np.std(metrics["eccentricities"], axis=0)
         max_quantiles[2] = max_quantiles[1] + std
         max_quantiles[0] = max_quantiles[1] - std
-
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
@@ -202,17 +185,10 @@ def instantaneous_attack(net, removal_rates, verbose=False):
     for ratio_removed in tqdm(removal_rates, desc="- Instantaneous_attack", disable=not verbose, file=sys.stdout):
         # Create deep copy of the original network
         attacked_net = copy.deepcopy(net)
-        # Get list of nodes
-        nodes = list(attacked_net.nodes)
-
 
         # degree_centrality
         degree_centralities = nx.degree_centrality(attacked_net)
         degree_centralities = sorted(degree_centralities.items(), key=lambda item: item[1], reverse=True)
-
-        # # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
-        # connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
-        # connectivities.sort(key=lambda x: x[1], reverse=True)
 
         num_removed_nodes = int(original_net_size * ratio_removed)
         removed_nodes = [x[0] for x in degree_centralities[:num_removed_nodes]]
@@ -221,13 +197,6 @@ def instantaneous_attack(net, removal_rates, verbose=False):
         attacked_net.remove_nodes_from(removed_nodes)
 
         metrics = get_attack_metrics(attacked_net)
-
-        # min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
-        # max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
-        #
-        # # Replace 50% percentile with mean value
-        # min_quantiles[1] = np.mean(metrics["shortest_paths"])
-        # max_quantiles[1] = np.mean(metrics["eccentricities"])
 
         min_quantiles = np.zeros(3, dtype=np.float)
         max_quantiles = np.zeros(3, dtype=np.float)
@@ -241,7 +210,6 @@ def instantaneous_attack(net, removal_rates, verbose=False):
         std = np.std(metrics["eccentricities"], axis=0)
         max_quantiles[2] = max_quantiles[1] + std
         max_quantiles[0] = max_quantiles[1] - std
-
 
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
@@ -268,22 +236,16 @@ def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False, track_net
 
     steps = int(max_rate / removal_rate)
     if track_net_num is not None:
-        track_net_num = int(steps/track_net_num)
+        track_net_num = int(steps / track_net_num)
         network_tracking = {0: nx.Graph(net)}
     step = 0
-    for ratio_removed in tqdm([removal_rate] * steps, desc="- Incremental_attack", disable=not verbose, file=sys.stdout):
-        step = step+1
-        # Create deep copy of the original network
-        # Get list of nodes
-        nodes = list(attacked_net.nodes)
+    for ratio_removed in tqdm([removal_rate] * steps, desc="- Incremental_attack", disable=not verbose,
+                              file=sys.stdout):
+        step = step + 1
 
         # degree_centrality
         degree_centralities = nx.degree_centrality(attacked_net)
         degree_centralities = sorted(degree_centralities.items(), key=lambda item: item[1], reverse=True)
-
-        # # Node connectivity is equal to the minimum number of nodes that must be removed to disconnect the node
-        # connectivities = [(node, nx.degree(attacked_net, node)) for node in nodes]
-        # connectivities.sort(key=lambda x: x[1], reverse=True)
 
         num_removed_nodes = int(original_net_size * ratio_removed)
         removed_nodes = [x[0] for x in degree_centralities[:num_removed_nodes]]
@@ -292,13 +254,6 @@ def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False, track_net
         attacked_net.remove_nodes_from(removed_nodes)
 
         metrics = get_attack_metrics(attacked_net)
-
-        # min_quantiles = mstats.mquantiles(metrics["shortest_paths"], axis=0)
-        # max_quantiles = mstats.mquantiles(metrics["eccentricities"], axis=0)
-        # Replace 50% percentile with mean value
-        # min_quantiles[1] = np.mean(metrics["shortest_paths"])
-        # max_quantiles[1] = np.mean(metrics["eccentricities"])
-
 
         min_quantiles = np.zeros(3, dtype=np.float)
         max_quantiles = np.zeros(3, dtype=np.float)
@@ -313,7 +268,6 @@ def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False, track_net
         max_quantiles[2] = max_quantiles[1] + std
         max_quantiles[0] = max_quantiles[1] - std
 
-
         min_path = np.vstack([min_path, min_quantiles]) if min_path is not None else min_quantiles
         max_path = np.vstack([max_path, max_quantiles]) if max_path is not None else max_quantiles
         cluster_size_ratios.append(metrics["cluster_sizes"])
@@ -325,6 +279,3 @@ def incremental_attack(net, removal_rate, max_rate=0.5, verbose=False, track_net
     if track_net_num is not None:
         return min_path, max_path, cluster_size_ratios, network_tracking
     return min_path, max_path, cluster_size_ratios
-
-
-

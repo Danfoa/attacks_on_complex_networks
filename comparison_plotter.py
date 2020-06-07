@@ -1,7 +1,4 @@
-
-
 from utils.visualization import plot_comparisons_from_file_clustering, plot_comparisons_from_file_metrics
-import utils.data_saver as ds
 
 exp_removal_rate = 0.025
 exp_max_rate = 0.5
@@ -30,16 +27,17 @@ def mu_experiment():
     plot_comparisons_from_file_metrics(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate)
     plot_comparisons_from_file_clustering(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate)
 
+
 def k_experiment():
-    ks = [2.10, 2.50, 2.80]
-    n = 1000
+    ks = [2.00, 2.60, 3.20]
+    n = 3000
 
     nets = ["poisson", "powerlaw"]
     types = ["attack", "failure"]
     net = nets[1]
     type = types[0]
 
-    filename = "%s-incr-%s-k=%.2f-n_nodes=%d"
+    filename = "n=3000-high-resolution-0.0-0.1/%s-incr-%s-k=%.2f-n_nodes=%d"
 
     # poisson, attack
     filenames = []
@@ -53,33 +51,29 @@ def k_experiment():
     plot_comparisons_from_file_metrics(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate)
     plot_comparisons_from_file_clustering(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate)
 
-def poisson_vs_powerlaw_experiment():
 
+def poisson_vs_powerlaw_experiment():
     filenames = ["poisson-incr-attack-mu=2.00-n_nodes=1000",
                  "powerlaw-incr-attack-k=2.80-n_nodes=1000"]
     labels = ["poisson", "powerlaw"]
-
 
     file_name = "incr-attack-poisson_vs_powerlaw-n_nodes=1000"
     title = "Poisson vs Powerlaw [incremental attack, N=1000]"
     plot_comparisons_from_file_metrics(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate)
     plot_comparisons_from_file_clustering(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate)
 
-def attack_vs_fail_experiment():
 
+def attack_vs_fail_experiment():
     filenames = ["poisson-incr-attack-mu=2.00-n_nodes=1000",
                  "poisson-incr-failure-mu=2.00-n_nodes=1000"]
     labels = ["attack", "failure"]
-
 
     file_name = "incr-poisson-attack_vs_failure-n_nodes=1000"
     title = "Attack vs Failure [incremental Poisson, N=1000]"
     plot_comparisons_from_file_metrics(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate)
     plot_comparisons_from_file_clustering(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate)
 
-
-#mu_experiment()
-#k_experiment()
-#poisson_vs_powerlaw_experiment()
-#attack_vs_fail_experiment()
-
+# mu_experiment()
+# k_experiment()
+# poisson_vs_powerlaw_experiment()
+# attack_vs_fail_experiment()

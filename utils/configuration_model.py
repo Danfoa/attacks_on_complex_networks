@@ -1,6 +1,7 @@
 import random
-import numpy as np
+
 import networkx as nx
+import numpy as np
 
 
 class ConfigurationGenerator:
@@ -96,7 +97,7 @@ class ConfigurationGenerator:
             main_land_nodes = self.visit_island_nodes(seed_node, main_land_nodes)
             # Mark as visited all nodes in current main_land
             non_visited_nodes.difference_update(main_land_nodes)
-            if len(main_land_nodes) != len(self.nodes): # There is still an island somewhere
+            if len(main_land_nodes) != len(self.nodes):  # There is still an island somewhere
                 outsider_node = non_visited_nodes.pop()
                 self.add_edge(seed_node, outsider_node)
                 self.degrees[seed_node] += 1

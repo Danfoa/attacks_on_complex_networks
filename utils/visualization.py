@@ -38,7 +38,7 @@ def plot_metric_distribution(metrics_quantiles, ratios, y_label, labels, title, 
 def plot_clustering_distribution(metrics_clusterings, ratios, y_label, labels, title, filename):
     fig, ax = plt.subplots(1, 1, figsize=(7, 5))
 
-    avg_size_isolated_clusters,  relative_size_largest_cluster = zip(*metrics_clusterings)
+    avg_size_isolated_clusters, relative_size_largest_cluster = zip(*metrics_clusterings)
     metrics_quantiles = [list(avg_size_isolated_clusters), list(relative_size_largest_cluster)]
 
     colors = cm.ocean(np.linspace(0.0, 0.7, len(metrics_quantiles)))
@@ -87,13 +87,13 @@ def plot_comparisons_from_file_metrics(file_name, title, filenames, labels, exp_
     for i, f in enumerate(filenames):
         min_path, max_path, cluster_size_ratios = load_results(f)
 
-        for quantiles in [min_path]:#, max_path]:
+        for quantiles in [min_path]:  # , max_path]:
             c = colors[i]
             ax.plot(xaxis, quantiles[:, 1], '-', color=c)
             ax.fill_between(xaxis, quantiles[:, 0], quantiles[:, 2], color=c, alpha=0.15)
 
         ylabels.append(r'$d_{min}: $' + labels[i])
-        #ylabels.append(r'$d_{max}: $' + labels[i])
+        # ylabels.append(r'$d_{max}: $' + labels[i])
 
     ax.grid("on", alpha=0.1)
     ax.set_ylabel("path length")
@@ -108,32 +108,31 @@ def plot_comparisons_from_file_metrics(file_name, title, filenames, labels, exp_
 
 
 def plot_comparisons_from_file_clustering(file_name, title, filenames, labels, exp_max_rate, exp_removal_rate):
-
     steps = int(exp_max_rate / exp_removal_rate)
     xaxis = np.cumsum([exp_removal_rate] * steps)
 
     colors = cm.ocean(np.linspace(0.0, 0.7, len(filenames)))
-    markers_all = ["s","x","o",".","D","*"]
+    markers_all = ["s", "x", "o", ".", "D", "*"]
     fig, ax = plt.subplots(1, 1, figsize=(7, 5))
 
     min_paths, max_paths, cluster_size_ratios, ylabels = [], [], [], []
     c = 0
-    for i,f in enumerate(filenames):
+    for i, f in enumerate(filenames):
         min_path, max_path, cluster_size_ratios = load_results(f)
 
         clusters_info = [x[0] for x in cluster_size_ratios]
         avg_size_isolated_clusters, relative_size_largest_cluster = zip(*clusters_info)
         metrics_quantiles = [list(avg_size_isolated_clusters), list(relative_size_largest_cluster)]
 
-        markers = [(2 * i + j)%len(markers_all) for j in range(2)]
+        markers = [(2 * i + j) % len(markers_all) for j in range(2)]
         markers = [markers_all[j] for j in markers]
 
-        #for quantiles, marker in zip(metrics_quantiles, markers):
+        # for quantiles, marker in zip(metrics_quantiles, markers):
         ax.plot(xaxis, metrics_quantiles[0], "-", fillstyle='none', color=colors[i])
         ax.plot(xaxis, metrics_quantiles[1], '--', fillstyle='none', color=colors[i])
 
-        ylabels.append("S: "+labels[i])
-        ylabels.append("<s>: "+labels[i])
+        ylabels.append("S: " + labels[i])
+        ylabels.append("<s>: " + labels[i])
 
     ax.grid("on", alpha=0.1)
     ax.set_ylabel("clusterings")
@@ -143,7 +142,7 @@ def plot_comparisons_from_file_clustering(file_name, title, filenames, labels, e
         ax.legend(ylabels).set_zorder(10)
 
     plt.tight_layout()
-    file_name = os.path.join('results', file_name+"_clust_comparisons")
+    file_name = os.path.join('results', file_name + "_clust_comparisons")
     plt.savefig(file_name)
 
 

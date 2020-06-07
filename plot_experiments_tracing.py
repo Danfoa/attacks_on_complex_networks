@@ -1,20 +1,11 @@
-
-import os
 import copy
-import glob
-import numpy as np
-from math import log, ceil
-from functools import reduce  # forward compatibility for Python 3
-import operator
-
 import math
+import os
 
-import matplotlib.pyplot as plt
 import matplotlib.cm as cm
+import matplotlib.pyplot as plt
 import networkx as nx
-
-
-
+import numpy as np
 
 
 def plot_network_communities(nets, titles, number_of_clusters, save_path=None):
@@ -26,7 +17,7 @@ def plot_network_communities(nets, titles, number_of_clusters, save_path=None):
     # original_position = nx.random_layout(nets[0], center=[-0.5, -0.5])
 
     cols = 1
-    rows = int(len(nets ) /cols)
+    rows = int(len(nets) / cols)
 
     plt.figure(figsize=(5.0 * cols, 5.0 * rows), dpi=120)
 
@@ -53,9 +44,9 @@ def plot_network_communities(nets, titles, number_of_clusters, save_path=None):
 
                 for node in subnet_nodes:
                     x = (new_pos[node][0] - emp_mean[0]) * scale - \
-                                ((1 + np.linalg.norm(empirical_diameter)) * np.cos(angles[n - 1]))
+                        ((1 + np.linalg.norm(empirical_diameter)) * np.cos(angles[n - 1]))
                     y = (new_pos[node][1] - emp_mean[1]) * scale + (
-                                (1 + np.linalg.norm(empirical_diameter)) * np.sin(angles[n - 1]))
+                            (1 + np.linalg.norm(empirical_diameter)) * np.sin(angles[n - 1]))
                     new_pos[node] = [x, y]
 
             nx.draw(net.subgraph(subnet_nodes),
@@ -92,4 +83,4 @@ if __name__ == "__main__":
     nets = [nets[0], nets[2], nets[4], nets[8], nets[-1]]
 
     plot_network_communities(nets, ["Title"] * len(nets), number_of_clusters=7
-)
+                             )

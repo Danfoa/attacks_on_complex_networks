@@ -1,10 +1,9 @@
 import os
-import numpy as np
 import pickle as pkl
 
 
 def save_results(min_path, max_path, cluster_size_ratios, file_name):
-    file_name = os.path.join("results",file_name)
+    file_name = os.path.join("results", file_name)
     os.makedirs(file_name, exist_ok=True)
 
     min_path_file = os.path.join(file_name, "min_path.pickle")

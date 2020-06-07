@@ -1,6 +1,4 @@
 import warnings
-import multiprocessing
-from multiprocessing import Process, Pool
 
 import numpy as np
 
@@ -8,8 +6,7 @@ from network_attacks import instantaneous_attack, incremental_attack, incrementa
     instantaneous_random_failure
 from utils.data_saver import save_results
 from utils.network_generation import get_poisson_net, get_power_law_net, get_gnutella
-from utils.visualization import plot_clustering_distribution, plot_metric_distribution, save_network_tracking, \
-    plot_comparisons_from_file_clustering, plot_comparisons_from_file_metrics
+from utils.visualization import plot_clustering_distribution, plot_metric_distribution, save_network_tracking
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
@@ -210,32 +207,17 @@ if __name__ == "__main__":
 
     for is_random_attack in [False]:
         # Poisson
-        # incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack, track_net=7)
+        incremental_attack_poisson(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_mus, is_random_attack,
+                                   track_net=7)
         # instantaneous_attack_poisson(exp_num_nodes, exp_removal_ratios, exp_mus, is_random_attack)
 
         # Scale Free
-        # incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack, track_net=7)
+        incremental_attack_powerlaw(exp_removal_rate, exp_max_rate, exp_num_nodes, exp_ks, is_random_attack,
+                                    track_net=7)
         # instantaneous_attack_powerlaw(exp_num_nodes, exp_removal_ratios, exp_ks, is_random_attack)
 
         # GNutella
         net = get_gnutella()
         file_name = title = "GNutella"
         # oregon.degree_distribution(net)
-        #incremental_attack_(net, file_name, title, exp_removal_rate, exp_max_rate, is_random_attack, track_net=6)
-
-
-
-    params1 = {"n_agents": 1, "map_type": "small", "logs_path": logs_path, "n_episodes": EPISODES, "n_steps": STEPS,
-               "batch_size": BATCH_SIZE, "lr": 0.0005, "gamma": 0.99, "epsilon": 0.15, "epsilon_decay": 0.999,
-               "log": True}
-
-    processes = []
-
-    for i, params in enumerate([params1.values(), params2.values()]):
-        p = Process(target=train_agents, args=params, name="Exp%d" % i)
-        p.start()
-        processes.append(p)
-        print(p.name)
-
-    for p in processes:
-        p.join()
+        # incremental_attack_(net, file_name, title, exp_removal_rate, exp_max_rate, is_random_attack, track_net=6)
