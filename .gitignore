@@ -1,5 +1,4 @@
 *.ini
-*.pdf
 *.pyc
 .idea/
 __pycache__/
